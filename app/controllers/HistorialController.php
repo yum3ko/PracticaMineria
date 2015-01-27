@@ -28,11 +28,11 @@ class HistorialController extends BaseController {
 		$historial = $this->historialRepo->newHistorial();
 		$data = Input::all();
 
-		$this->archivoRepo->makeArchivo($data['url']);
+		$datos_dominio = $this->archivoRepo->makeArchivo($data['url']);
 
-		$this->archivoRepo->getArchivo();
+		$this->archivoRepo->getArchivo($datos_dominio);
 
-		$this->archivoRepo->modifica();
+		$this->archivoRepo->modifica($datos_dominio);
 
 		$manager = new HistorialManager($historial, $data);
 

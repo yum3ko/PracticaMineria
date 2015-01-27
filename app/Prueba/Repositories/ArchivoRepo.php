@@ -5,21 +5,20 @@ use Prueba\Entities\Historial;
 
 class ArchivoRepo {
 
-	protected $url_dominio;
-	protected $nombre_dominio;
-	protected $archivo_destino;
+	protected $archivo_destino = 'temp.txt';
 
 	public function makeArchivo($url)
-    { 
-        $this->url_dominio		= "http://".$url;
-        $this->$nombre_dominio 	= substr($url, 0, strpos($url, '.'));
-        $this->$archivo_destino = 'temp.txt';        
+    {
+        $url_dominio	= "http://".$url;
+        $nombre_dominio = substr($url, 0, strpos($url, '.'));
+
+        return compact('url_dominio', 'nombre_dominio');
     }
 
-	public function getArchivo()
+	public function getArchivo($datos_dominio)
     {
-        $curl = curl_init ($this->url_dominio);         //inicia sesion
-        $fs_archivo = fopen ($archivo_destino, "w"); 
+        $curl = curl_init ($datos_dominio['url_dominio']);         //inicia sesion
+        $fs_archivo = fopen ($this->archivo_destino, "w"); 
         curl_setopt ($curl, CURLOPT_FILE, $fs_archivo); //establece opciones para transferencia
         curl_setopt ($curl, CURLOPT_HEADER, 0); 
         curl_exec ($curl);								//ejecuta sesion
@@ -35,13 +34,13 @@ class ArchivoRepo {
         return $exito;
     }
 
-    public function modifica()
+    public function modifica($datos_dominio)
     {
 
         // Abrir el archivo
         
-        $abrir = fopen($archivo_destino,'r+');
-        $contenidos = fread($abrir,filesize($archivo_destino));
+        $abrir = fopen($this->archivo_destino,'r+');
+        $contenidos = fread($abrir,filesize($this->archivo_destino));
         fclose($abrir);
          
         // Separar linea por linea
@@ -91,7 +90,7 @@ class ArchivoRepo {
                 $perteneceDominio = strpos($href, '/');
                 if($perteneceDominio === 0)
                 {
-                    $href = $this->url_dominio.$href;
+                    $href = $datos_dominio['url_dominio'].$href;
                 }
 
                 $findA = strpos($contenidos[$i], '<a ');
@@ -113,7 +112,7 @@ class ArchivoRepo {
         $contenidos = implode("\r\n",$contenidos);
          
         // Guardar Archivo
-        $abrir = fopen($archivo_destino,'w');
+        $abrir = fopen($this->archivo_destino,'w');
         fwrite($abrir,$contenidos);
         fclose($abrir);
      
