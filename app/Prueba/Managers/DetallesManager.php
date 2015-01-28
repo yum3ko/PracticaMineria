@@ -6,6 +6,7 @@ class DetallesManager extends BaseManager{
     public function getRules()
     {
         $rules = [
+            'numero_maximo' => 'required',
             'historial_id'  => 'required',
             'url'           => '',
             'palabra_clave' => '',

@@ -26,7 +26,9 @@ class HistorialController extends BaseController {
 
 	public function index()
 	{
-		$datos = $this->historialRepo->all();
+		$historial_id = $this->historialRepo->all()->count();
+
+		$datos = $this->detallesRepo->getDetallesByHistorial($historial_id);
 
 		$numero = array('50'=>'50', '100'=>'100', '150'=>'150');
 

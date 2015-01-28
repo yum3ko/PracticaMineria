@@ -21,4 +21,9 @@ class DetallesRepo extends BaseRepo{
         return Detalles::lists('url', 'id');
     }
 
+    public function getDetallesByHistorial($historial_id)
+    {
+        return Detalles::where('historial_id', '=', $historial_id)->get();
+    }
+
 }
