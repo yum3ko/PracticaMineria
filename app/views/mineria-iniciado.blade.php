@@ -18,8 +18,12 @@
             {{ Form::open(['route' => 'add_historial', 'method' => 'POST', 'role' => 'form']) }}
 
                 <div class="form-group col-sm-4">
-                    {{ Field::text('url', $url_iniciada) }}
-
+                    <div class="form-group col-sm-4">
+                        <label for="url" class="col-ms-4 control-label">Escribe una URL</label>
+                    </div>
+                    <div class="form-group col-sm-8">
+                        <input type="text" name="url" id="url" class="form-control col-ms-8">
+                    </div>
                 </div>
 
                 <div class="form-group col-sm-4">    
@@ -29,7 +33,7 @@
     
                 <div class="form-group col-sm-4">
                   
-                    <button type="submit" class="btn btn-default btn-block">Comenzar Minería</button>
+                    <button type="submit" class="btn btn-default btn-block" id="enviar">Comenzar Minería</button>
                 </div>
             
             {{ Form::close() }}
@@ -71,3 +75,17 @@
 
 @stop
 
+@section('scripts')
+<script>
+    jQuery(document).ready(function() {
+      $('#enviar').click(function(){
+        if($('#url').val() === ''){
+            alert('URL está vacío');
+            return false;
+        }
+
+      })
+
+    });
+</script>
+@stop
