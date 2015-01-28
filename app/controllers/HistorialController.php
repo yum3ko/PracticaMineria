@@ -49,7 +49,7 @@ class HistorialController extends BaseController {
 		$historial = $this->historialRepo->newHistorial();
 		$data = Input::all();
 
-		$datos_dominio = $this->archivoRepo->setDatos($data['url']);
+		$datos_dominio = $this->archivoRepo->makeArchivo($data['url']);
 
 
 		$historialManager = new HistorialManager($historial, $data);
@@ -61,37 +61,32 @@ class HistorialController extends BaseController {
 		$historial_id = $this->historialRepo->all()->count();
 
 
-		if($this->archivoRepo->makeArchivo($datos_dominio))
+		if($this->archivoRepo->getArchivo($datos_dominio))
 		{
-			$contenido = $this->archivoRepo->getArchivo();
+			$enlaces=$this->archivoRepo->modifica($datos_dominio, $data['numero_maximo']);
 
-			if( $contenido !== false)
+			if(count($enlaces) > 0)
 			{
-				$enlaces = $this->archivoRepo->getDatos($contenido, $datos_dominio, $data['numero_maximo']);
+				$detalles = $this->detallesRepo->newDetalles();
 
-				if( (count($enlaces) > 0) )
-				{
-					$detalles = $this->detallesRepo->newDetalles();
+				foreach($enlaces as $enlac){
+					$enlace = extract($enlac);
+					
+					$dataDetalle = array(
+						'url' 			=> $url,
+						'palabra_clave' => $palabra_clave,
+						'coincidencias' => $coincidencias,
+						'historial_id'	=> $historial_id
+					);
 
-					foreach($enlaces as $enlac){
-						$enlace = extract($enlac);
-						
-						$dataDetalle = array(
-							'url' 			=> $url,
-							'palabra_clave' => $palabra_clave,
-							'coincidencias' => $coincidencias,
-							'historial_id'	=> $historial_id
-						);
+					$detallesManager = new DetallesManager($detalles, $dataDetalle);
 
-						$detallesManager = new DetallesManager($detalles, $dataDetalle);
+					$detallesManager->save();
 
-						$detallesManager->save();
-
-						$detallesStatus = 'Success';
-					}
+					$detallesStatus = 'Success';
 				}
 			}
-			$this->archivoRepo->deleteArchivo();
+			
 		}
 
 		$url_iniciada = $data['url'];

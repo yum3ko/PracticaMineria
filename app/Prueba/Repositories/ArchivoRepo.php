@@ -8,7 +8,7 @@ class ArchivoRepo {
 	protected $archivo_destino = 'temp.txt';
 
 
-	public function setDatos($url)
+	public function makeArchivo($url)
     {
         $url_dominio	= "http://".$url;
         $nombre_dominio = substr($url, 0, strpos($url, '.'));
@@ -17,7 +17,7 @@ class ArchivoRepo {
     }
 
 
-	public function makeArchivo($datos_dominio)
+	public function getArchivo($datos_dominio)
     {
         $curl = curl_init ($datos_dominio['url_dominio']);         //inicia sesion
         $fs_archivo = fopen ('..\Public\_'.$this->archivo_destino, "w"); 
@@ -37,49 +37,31 @@ class ArchivoRepo {
     }
 
 
-    public function getArchivo()
+    public function modifica($datos_dominio, $num_maximo)
     {
-        $enlaces        = array();
-        $datosEnlaces   = array();
-        $coincidencias  = 1;
+        $enlaces = array();
+        $datosEnlaces = array();
+        $coincidencias      = 1;
 
         // Abrir el archivo
         $archivo = '..\Public\_'.$this->archivo_destino;
-        if( !($abrir = fopen($archivo,'r+')) )
-        {
-            return false;
-        }
-
+        $abrir = fopen($archivo,'r+');
         $contenidos = fread($abrir,filesize($archivo));
         fclose($abrir);
 
-        return $contenidos;
-    }
-
-
-    public function getDatos($contenidos, $datos_dominio, $num_maximo)
-    {
         // Separar linea por linea
         $contenidos = explode("</a",$contenidos);
          
         // Modificar lineas deseadas 
         $contador = count($contenidos);
-
-        if($num_maximo < $contador)
-        {
-            $num_maximo = $contador;
-        }
-
-        for( $i = 0; $i < $num_maximo; $i++ ) 
-        {
-
-            $findA = strpos($contenidos[$i], '<a ', 0);
-            if($findA === false){
-                continue;
-            }
+        for( $i = 0; $i < $contador; $i++ ) 
+        {               
+            $findA = strpos($contenidos[$i], '<a ');
+                    
             $contenidos[$i] = substr($contenidos[$i], $findA); //corta del principio hasta el findA
 
             $caracteres_href = 6;
+
             $findHref_inicio = strpos($contenidos[$i], 'href="');
 
             if( count($contenidos[$i]) > ($findHref_inicio+$caracteres_href) )
@@ -90,6 +72,7 @@ class ArchivoRepo {
             {
                 $findHref_final = 0;
             }
+
 
             if( $findHref_inicio === false )
             {
@@ -112,19 +95,20 @@ class ArchivoRepo {
                 continue;
             }
 
-            $findHref_tamanno = $findHref_final - ($findHref_inicio + $caracteres_href);
-            $url              = substr($contenidos[$i], $findHref_inicio+$caracteres_href, $findHref_tamanno);
-
+            $findHref_tamaño = $findHref_final - ($findHref_inicio + $caracteres_href);
+            $url             = substr($contenidos[$i], $findHref_inicio+$caracteres_href, $findHref_tamaño);
 
             $perteneceDominio = strpos($url, '/');
+
+
             if($perteneceDominio === 0)
             {
                 $url = $datos_dominio['url_dominio'].$url;
             }
 
-            $caracter_palabra = 1;
+
             $findPalabra_inicio = strpos($contenidos[$i], ">", $findHref_final);
-            $palabra_clave      = substr($contenidos[$i], $findPalabra_inicio+$caracter_palabra);
+            $palabra_clave      = substr($contenidos[$i], $findPalabra_inicio+1);
 
             $compruebaIMG       = strpos($contenidos[$i], "img", $findHref_final); 
             $caracteres_alt = 5;
@@ -145,50 +129,63 @@ class ArchivoRepo {
                     $palabra_clave = '';
                     continue;
                 }
-                $findAlt_total = $findAlt_final - ($compruebaIMG + $caracteres_alt);
 
+                $findAlt_total = $findAlt_final - ($compruebaIMG + $caracteres_alt);
                 $palabra_clave = substr($contenidos[$i], $compruebaIMG+$caracteres_alt, $findAlt_total);
             }
+            
 
+            if( $contador == intval($num_maximo) )
+            {
+                for($j = $num_maximo; $j < $contador; $j++)
+                {
+                    unset($contenidos[$j]);
+                }
+                $contenidos = array_values($contenidos);
+                break;
+            }
 
             //GUARDANDO DATOS en arreglo
             $datosEnlaces = compact('url', 'palabra_clave', 'coincidencias');
 
-            if(isset($datosEnlaces))
+            
+                
+            if( $i==0 )
             {
-                if( $i==0 )
+                array_unshift($enlaces, $datosEnlaces);
+            }
+            else
+            {
+                foreach($enlaces as $enlace) 
                 {
-                    $enlaces[0] = $datosEnlaces;
-                }
-                else
-                {
-                    foreach($enlaces as $enlace) 
+                    if( in_array($enlace, $datosEnlaces) )
                     {
-                        if( in_array($enlace, $datosEnlaces) )
-                        {
-                            $enlace['coincidencias'] =+ 1;                      
-                        }
-                        else
-                        {
-                            $enlaces[] = $datosEnlaces;
-                        }
+                        $enlace['coincidencias'] =+ 1;                      
+                    }
+                    else
+                    {
+                        $enlaces[] = $datosEnlaces;
                     }
                 }
             }
+
+            
+                //dd(array_values($enlaces));
     
         }//for contador
+    
+        // Unir archivo
+        $contenidos = implode("\r\n",$contenidos);
                  
-        return $enlaces;
-    }
+        // Guardar Archivo
+        $abrir = fopen($archivo,'w');
+        fwrite($abrir,$contenidos);
+        fclose($abrir);
 
-
-    public function deleteArchivo()
-    {
-        $archivo = '..\Public\_'.$this->archivo_destino;
         //Borrar archivo
         unlink($archivo);
 
-        return true;
+        return $enlaces;
     }
 
 }
