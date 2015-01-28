@@ -23,7 +23,7 @@
                 </div>
 
                 <div class="form-group col-sm-4">    
-                    {{ Field::select('numero_maximo') }}
+                    {{ Field::select('numero_maximo', $numero) }}
 
                 </div>
     

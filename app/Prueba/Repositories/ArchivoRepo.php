@@ -18,7 +18,7 @@ class ArchivoRepo {
 	public function getArchivo($datos_dominio)
     {
         $curl = curl_init ($datos_dominio['url_dominio']);         //inicia sesion
-        $fs_archivo = fopen ($this->archivo_destino, "w"); 
+        $fs_archivo = fopen ('..\Public\_'.$this->archivo_destino, "w"); 
         curl_setopt ($curl, CURLOPT_FILE, $fs_archivo); //establece opciones para transferencia
         curl_setopt ($curl, CURLOPT_HEADER, 0); 
         curl_exec ($curl);								//ejecuta sesion
@@ -34,87 +34,90 @@ class ArchivoRepo {
         return $exito;
     }
 
-    public function modifica($datos_dominio)
+    public function modifica($datos_dominio, $num_maximo)
     {
-
         // Abrir el archivo
-        
-        $abrir = fopen($this->archivo_destino,'r+');
-        $contenidos = fread($abrir,filesize($this->archivo_destino));
+echo 'Abriendo archivo txt <br> ';
+        $archivo = '..\Public\_'.$this->archivo_destino;
+        $abrir = fopen($archivo,'r+');
+        $contenidos = fread($abrir,filesize($archivo));
         fclose($abrir);
          
         // Separar linea por linea
-        $contenidos = explode("\n",$contenidos);
+        $contenidos = explode("</a",$contenidos);
          
         // Modificar lineas deseadas 
         $contador = count($contenidos);
-
+echo 'Al principio '.$contador.'<br>';
 
         for( $i = 0; $i < $contador; $i++ ) 
-        {
-            $findA = strpos($contenidos[$i], '<a ');
-
-            if( $findA === false )
-            {
-                unset($contenidos[$i]); //elimina
-                $contenidos = array_values($contenidos); //recorre
-                $i-=1;
-
-                $contador = count($contenidos);
-            }
-                
-            else
-            {
-                $contenidos[$i] = substr($contenidos[$i], $findA); //corta del principio hasta el findA
-
-                $caracteres_href = 6;
-
-                $findHref_inicio = strpos($contenidos[$i], 'href="');
-                $findHref_final  = strpos($contenidos[$i], '"', $findHref_inicio+$caracteres_href );
-
-                if( $findHref_inicio === false )
-                {
-                    $findHref_inicio = strpos($contenidos[$i], "href='");
-                    $findHref_final  = strpos($contenidos[$i], "'", $findHref_inicio+$caracteres_href );
-                }
-
-                if( $findHref_inicio === false )  //si no contiene atributo href: se elimina
-                {
-                    $href = '';
-                    continue;
-                }
-
-                $findHref_total = $findHref_final - ($findHref_inicio + $caracteres_href);
-                $href  = substr($contenidos[$i], $findHref_inicio+$caracteres_href, $findHref_total);
-
-                $perteneceDominio = strpos($href, '/');
-                if($perteneceDominio === 0)
-                {
-                    $href = $datos_dominio['url_dominio'].$href;
-                }
-
+        {               
                 $findA = strpos($contenidos[$i], '<a ');
 
-                if( $findA !== false )
+                if( ($findA === false ) && ($i == $contador-1) )
                 {
-                    $contenidos[]   = substr($contenidos[$i], $findA);
-                    $contador       = count($contenidos);
-                        
-                    $contenidos[$i] = substr($contenidos[$i], 0, $findA);   
+                    unset( $contenidos[$i] ); //elimina
+                    $contenidos = array_values($contenidos); //vuelve indexar
+                    $i-=1;
+
+                    $contador = count($contenidos);
+                    continue;
                 }
+                    
+                else
+                {
+                    $contenidos[$i] = substr($contenidos[$i], $findA); //corta del principio hasta el findA
 
-            } //else
-        } //fin for
+                    $caracteres_href = 6;
 
-        $contador = count($contenidos);
+                    $findHref_inicio = strpos($contenidos[$i], 'href="');
+                    $findHref_final  = strpos($contenidos[$i], '"', $findHref_inicio+$caracteres_href );
 
-        // Unir archivo
-        $contenidos = implode("\r\n",$contenidos);
-         
-        // Guardar Archivo
-        $abrir = fopen($this->archivo_destino,'w');
-        fwrite($abrir,$contenidos);
-        fclose($abrir);
-     
+                    if( $findHref_inicio === false )
+                    {
+                        $findHref_inicio = strpos($contenidos[$i], "href='");
+                        $findHref_final  = strpos($contenidos[$i], "'", $findHref_inicio+$caracteres_href );
+                    }
+
+                    if( $findHref_inicio === false )  //si no contiene atributo href: se elimina
+                    {
+                        $href = '';
+                        continue;
+                    }
+
+                    $findHref_total = $findHref_final - ($findHref_inicio + $caracteres_href);
+                    $href  = substr($contenidos[$i], $findHref_inicio+$caracteres_href, $findHref_total);
+
+                    $perteneceDominio = strpos($href, '/');
+                    if($perteneceDominio === 0)
+                    {
+                        $href = $datos_dominio['url_dominio'].$href;
+                    }
+        echo ' url: '.$href.'<br> ';
+                    
+
+                } //fin else si existe etiqueta A
+
+                $contador = count($contenidos);
+        echo 'Al final '.$contador;
+                // Unir archivo
+                $contenidos = implode("\r\n",$contenidos);
+                 
+                // Guardar Archivo
+                $abrir = fopen($archivo,'w');
+                fwrite($abrir,$contenidos);
+                fclose($abrir);
+
+                if( $contador == intval($num_maximo) )
+                {
+                    for($j = $num_maximo; $j < $contador; $j++)
+                    {
+                        unset($contenidos[j]);
+                    }
+                    break;
+                }
+                
+        }//for contador
     }
+
 }

@@ -20,7 +20,9 @@ class HistorialController extends BaseController {
 	{
 		$datos = $this->historialRepo->all();
 
-		 return View::make('mineria', compact('datos'));
+		$numero = array('50'=>'50', '100'=>'100', '150'=>'150');
+
+		return View::make('mineria', compact('datos', 'numero'));
 
 	}
 	public function store()
@@ -30,9 +32,10 @@ class HistorialController extends BaseController {
 
 		$datos_dominio = $this->archivoRepo->makeArchivo($data['url']);
 
-		$this->archivoRepo->getArchivo($datos_dominio);
-
-		$this->archivoRepo->modifica($datos_dominio);
+		if($this->archivoRepo->getArchivo($datos_dominio))
+		{
+			$this->archivoRepo->modifica($datos_dominio, $data['numero_maximo']);
+		}
 
 		$manager = new HistorialManager($historial, $data);
 
