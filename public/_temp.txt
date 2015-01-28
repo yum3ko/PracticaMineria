@@ -76,15 +76,15 @@
 
 	<div class="frases">
 <div style=" float:right; width:180px; padding-left:5px;margin-top:-3px; padding-right:3px">
-<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://mackuil.com" data-text="#DatoInutil: El rey de corazones es el único rey sin bigotes." data-lang="es" data-count="none" data-dnt="true"><img src="http://mackuil.com/imagenes/boton-compartir-twitter.png"  />
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://mackuil.com" data-text="#DatoInutil: La letra “J”, es la única letra que no aparece en la tabla periódica. " data-lang="es" data-count="none" data-dnt="true"><img src="http://mackuil.com/imagenes/boton-compartir-twitter.png"  />
 >
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-<a target="new" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Btitle%5D=Dato inútil: El rey de corazones es el único rey sin bigotes.&amp;p%5Burl%5D=http%3A%2F%2Fwww.mackuil.com&amp;p%5Bsummary%5D=Como lo viste en el Blog Mackuil! Visitanos&amp;p%5Bimages%5D%5B0%5D=http%3A%2F%2Fmackuil.com%2Fimagenes%2Fmackuilfb.png"  /><img src="http://mackuil.com/imagenes/boton-compartir-facebook.png"  />
+<a target="new" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Btitle%5D=Dato inútil: La letra “J”, es la única letra que no aparece en la tabla periódica. &amp;p%5Burl%5D=http%3A%2F%2Fwww.mackuil.com&amp;p%5Bsummary%5D=Como lo viste en el Blog Mackuil! Visitanos&amp;p%5Bimages%5D%5B0%5D=http%3A%2F%2Fmackuil.com%2Fimagenes%2Fmackuilfb.png"  /><img src="http://mackuil.com/imagenes/boton-compartir-facebook.png"  />
 > 
 </div>
 <div style="float:right;">
-<strong>Dato inútil:</strong> El rey de corazones es el único rey sin bigotes.</div>
+<strong>Dato inútil:</strong> La letra “J”, es la única letra que no aparece en la tabla periódica. </div>
 
 
 </div>
@@ -92,7 +92,7 @@
 >       	 
         </div>       
    
-	<div class="izqlogo" align="center"><img src="http://mackuil.com/b/1.jpg" border="0" width="300" height="65"></div>
+	<div class="izqlogo" align="center"><img src="http://mackuil.com/b/46.jpg" border="0" width="300" height="65"></div>
 	
 </div>
 
