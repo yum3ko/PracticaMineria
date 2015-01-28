@@ -1,98 +1,245 @@
-<a href="http://mackuil.com">INICIO
-></li>
-<li id="menu-item-1684" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1684"><a href="http://mackuil.com/category/videojuegos/">VIDEOJUEGOS
->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es-ES">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Mackuil | Bienvenido al blog mackuil</title>
+
+     <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+
+      {lang: 'es'}
+
+    </script>
+<meta name="description" content="Bienvenido al blog mackuil" />
+
+<link rel="alternate" type="application/rss+xml" href="http://mackuil.com/feed/" title="Mackuil últimas entradas" />
+
+<link rel="alternate" type="application/rss+xml" href="http://mackuil.com/comments/feed/" title="Mackuil últimos comentarios" />
+
+<link rel="pingback" href="http://mackuil.com/xmlrpc.php" />
+
+<link rel="shortcut icon" href="http://mackuil.com/wp-content/themes/arras/images/favicon.ico" />
+
+
+<!--[if IE 7]><link rel='stylesheet' id='css-ie-fix' href='http://mackuil.com/wp-content/plugins/special-recent-posts/css/css-ie7-fix.css' type='text/css' media='all' /> <![endif]--><link rel="dns-prefetch" href="//connect.facebook.net" />
+<link rel='stylesheet' id='colorbox-theme5-css'  href='http://mackuil.com/wp-content/plugins/jquery-lightbox-for-native-galleries/colorbox/theme5/colorbox.css?ver=1.3.14' type='text/css' media='screen' />
+<link rel='stylesheet' id='srp-front-stylesheet-css'  href='http://mackuil.com/wp-content/plugins/special-recent-posts/css/css-front.css?ver=3.9.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-polls-css'  href='http://mackuil.com/wp-content/plugins/wp-polls/polls-css.css?ver=2.63' type='text/css' media='all' />
+<link rel='stylesheet' id='lct_style-css'  href='http://mackuil.com/wp-content/plugins/live-countdown-timer/style.css?ver=3.9.3' type='text/css' media='all' />
+<script type='text/javascript' src='http://mackuil.com/wp-includes/js/jquery/jquery.js?ver=1.11.0'></script>
+<script type='text/javascript' src='http://mackuil.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://mackuil.com/wp-content/plugins/jquery-lightbox-for-native-galleries/colorbox/jquery.colorbox-min.js?ver=1.3.14'></script>
+<script type='text/javascript' src='http://mackuil.com/wp-content/themes/arras/js/superfish/hoverIntent.js'></script>
+<script type='text/javascript' src='http://mackuil.com/wp-content/themes/arras/js/superfish/superfish.js'></script>
+<script type='text/javascript' src='http://mackuil.com/wp-content/plugins/live-countdown-timer/script.js?ver=3.9.3'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://mackuil.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://mackuil.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.9.3" />
+<link rel='shortlink' href='http://wp.me/WY8t' />
+
+
+<!-- Facebook Like Thumbnail -->
+<meta property="og:image" content="http://mackuil.com/imagenes/mackuil-fb.png" />
+<!-- End Facebook Like Thumbnail -->
+
+<style type="text/css">
+.wp-polls .pollbar {
+	margin: 1px;
+	font-size: 8px;
+	line-height: 10px;
+	height: 10px;
+	background-image: url('http://mackuil.com/wp-content/plugins/wp-polls/images/default_gradient/pollbg.gif');
+	border: 1px solid #c8c8c8;
+}
+</style>
+<!--Wp-Thumbie Style Sheet-->
+<link rel="stylesheet" href="http://mackuil.com/wp-content/plugins/wp-thumbie/wp_thumbie_verticle.css" type="text/css" media="screen" />
+<!--Wp-Thumbie Style Sheet-->
+<script type='text/javascript'>/* <![CDATA[ */ var _wpaudio = {url: 'http://mackuil.com/wp-content/plugins/wpaudio-mp3-player', enc: {}, convert_mp3_links: false, style: {text_font:'Arial, Sans-serif',text_size:'18px',text_weight:'bold',text_letter_spacing:'-1px',text_color:'inherit',link_color:'#24f',link_hover_color:'#02f',bar_base_bg:'#eee',bar_load_bg:'#ccc',bar_position_bg:'#46f',sub_color:'#aaa'}}; /* ]]> */</script>		<script type="text/javascript" charset="utf-8">
+			var href = "http://mackuil.com";
+			// solves the issue where app mode does not set the correct UA String.
+			if ( window.navigator.standalone ) {
+				href += "?onswipe_redirect=yes";
+				location.href = href;
+			};
+			try{
+			// make reader urls work backwards.
+				href += "?p=" + location.hash.match(/\#!\/entry\/.+,(\d+)$/)[1];
+				location.href = href;
+			}catch(e){}		
+		</script>
+		<link rel="stylesheet" href="http://mackuil.com/wp-content/themes/arras/css/styles/default.css" type="text/css" media="screen,projection" /><link rel="stylesheet" href="http://mackuil.com/wp-content/themes/arras/css/layouts/2c-r-fixed.css" type="text/css" />
+<!-- Generated by Arras WP Theme -->
+<style type="text/css">
+	.posts-default li  { width: 205px; height: 225px; }
+	.posts-default img, .posts-default .entry-thumbnails-link { width: 195px; height: 110px; }
+	.posts-default .entry-meta { width: 195px; }
+	.posts-default .entry-thumbnails { width: 205px; height: 120px; }
+			.posts-quick .entry-thumbnails img { width: 115px; height: 115px; }
+		.posts-quick .entry-meta { width: 115px; }
+			.featured { height: 260px; }
+	.featured-article { width: 738px; height: 250px; }
+	.featured-article img { width: 738px; height: 250px; }
+	#controls { width: 708px; top: 110px; }
+	#controls .next { left: 708px; }
+	.featured-entry { height: 84px; top: -84px; }
+	.featured-slideshow-inner { height: 250px }
+	body { background: center top scroll no-repeat #000 !important; }
+	.featured-stories-summary  { margin-left: 51px; }
+	.single .post .entry-photo img, .single-post .entry-photo img  { width: 728px; height: 250px; }
+		.footer-sidebar  { width: 920px; }
+	</style>
+	<script type="text/javascript">
+	jQuery(document).ready(function($) {
+
+$('.multi-sidebar').tabs();
+
+$('.sf-menu').superfish({autoArrows: true, speed: 'fast', dropShadows: 'true'});
+
+
+
+});	</script>
+	<!-- jQuery Lightbox For Native Galleries v3.2.2 | http://www.viper007bond.com/wordpress-plugins/jquery-lightbox-for-native-galleries/ -->
+<script type="text/javascript">
+// <![CDATA[
+	jQuery(document).ready(function($){
+		$(".gallery").each(function(index, obj){
+			var galleryid = Math.floor(Math.random()*10000);
+			$(obj).find("a").colorbox({rel:galleryid, maxWidth:"95%", maxHeight:"95%"});
+		});
+		$("a.lightbox").colorbox({maxWidth:"95%", maxHeight:"95%"});
+	});
+// ]]>
+</script>
+<meta property="og:site_name" content="Mackuil" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="es_ES" />
+<meta property="fb:app_id" content="120650081290432" />
+<meta property="og:title" content="Mackuil" />
+<meta property="og:description" content="Bienvenido al blog mackuil" />
+<meta property="og:url" content="http://mackuil.com" />
+<link rel="stylesheet" href="http://mackuil.com/wp-content/themes/arras/user.css" type="text/css" media="screen,projection" />
+ <style>
+
+
+#fijoWrapper { /* required to avoid jumping */
+  left: 450px;
+  position: absolute;
+  margin-left: 35px;
+  width:300px;
+}
+
+#fijo {
+  position: absolute;
+  top: 0;
+  margin-top: 0px;
+  margin-bottom:3px;
+  border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+	  border-right: 1px solid #ccc;
+	   border-bottom: 1px solid #ccc;
+  width:300px;
+  padding: 5px ;
+  background-color:#FFF;
+  z-index:99;
+}
+
+
+#fijo.fied {
+  position: fixed;
+  top: 0;
+  
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script>
+$(function () {
+
+  var msie6 = $.browser == 'msie' && $.browser.version < 7;
+
+  if (!msie6) {
+    var top = $('#fijo').offset().top - parseFloat($('#fijo').css('margin-top').replace(/auto/, 0));
+    $(window).scroll(function (event) {
+      // what the y position of the scroll is
+      var y = $(this).scrollTop();
+
+      // whether that's below the form
+      if (y >= top) {
+        // if so, ad the fixed class
+        $('#fijo').addClass('fied');
+      } else {
+        // otherwise remove it
+        $('#fijo').removeClass('fied');
+      }
+    });
+  }
+});
+</script>
+</head>
+
+<body class="home blog layout-2c-r-fixed no-js style-default">
+
+
+<script type="text/javascript">
+//<![CDATA[
+(function(){
+var c = document.body.className;
+c = c.replace(/no-js/, 'js');
+document.body.className = c;
+})();
+//]]>
+</script>
+
+
+<div id="nav">
+	<div id="nav-content" class="clearfix">
+	<div class="menu-secciones-container"><ul id="menu-secciones" class="sf-menu menu clearfix"><li id="menu-item-1713" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-1713"><a href="http://mackuil.com">INICIO</a></li>
+<li id="menu-item-1684" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1684"><a href="http://mackuil.com/category/videojuegos/">VIDEOJUEGOS</a>
 <ul class="sub-menu">
-	<li id="menu-item-1690" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1690"><a href="http://mackuil.com/category/dota/">DOTA
-></li>
+	<li id="menu-item-1690" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1690"><a href="http://mackuil.com/category/dota/">DOTA</a></li>
 </ul>
 </li>
-<li id="menu-item-1686" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1686"><a href="http://mackuil.com/category/curiosidades/">CURIOSIDADES
-></li>
-<li id="menu-item-1688" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1688"><a href="http://mackuil.com/category/geek/">GEEK
-></li>
-<li id="menu-item-1687" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1687"><a href="http://mackuil.com/category/videos/">VIDEOS
->
+<li id="menu-item-1686" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1686"><a href="http://mackuil.com/category/curiosidades/">CURIOSIDADES</a></li>
+<li id="menu-item-1688" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1688"><a href="http://mackuil.com/category/geek/">GEEK</a></li>
+<li id="menu-item-1687" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1687"><a href="http://mackuil.com/category/videos/">VIDEOS</a>
 <ul class="sub-menu">
-	<li id="menu-item-1692" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1692"><a href="http://mackuil.com/category/videos/juegos/">JUEGOS
-></li>
+	<li id="menu-item-1692" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1692"><a href="http://mackuil.com/category/videos/juegos/">JUEGOS</a></li>
 </ul>
 </li>
-<li id="menu-item-1689" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1689"><a href="http://mackuil.com/category/descarga/">DESCARGA
-></li>
-<li id="menu-item-1691" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1691"><a href="http://mackuil.com/category/facebook/">FACEBOOK
-></li>
-<li id="menu-item-1693" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1693"><a href="http://mackuil.com/category/mackuil/">MACKUIL
-></li>
+<li id="menu-item-1689" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1689"><a href="http://mackuil.com/category/descarga/">DESCARGA</a></li>
+<li id="menu-item-1691" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1691"><a href="http://mackuil.com/category/facebook/">FACEBOOK</a></li>
+<li id="menu-item-1693" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1693"><a href="http://mackuil.com/category/mackuil/">MACKUIL</a></li>
 </ul></div>		<ul class="quick-nav clearfix">
-					<li><a id="rss" title="Mackuil RSS" href="http://mackuil.com/feed/">RSS
-></li>
+					<li><a id="rss" title="Mackuil RSS" href="http://mackuil.com/feed/">RSS</a></li>
 				
-							<li><a id="twitter" title="Mackuil Twitter" href="http://www.twitter.com/darkaw_remse/" target="_blank">Twitter
-></li>
+							<li><a id="twitter" title="Mackuil Twitter" href="http://www.twitter.com/darkaw_remse/" target="_blank">Twitter</a></li>
 				
-							<li><a id="facebook" title="Mackuil Facebook" href="https://www.facebook.com/Mackuil?ref=ts&fref=ts" target="_blank">Facebook
-></li>
+							<li><a id="facebook" title="Mackuil Facebook" href="https://www.facebook.com/Mackuil?ref=ts&fref=ts" target="_blank">Facebook</a></li>
 				
 			</ul>
 	</div><!-- #nav-content -->
 </div><!-- #nav -->
 
 <div id="top-menu" class="clearfix">
-	<div class="sf-menu menu clearfix"><ul><li class="page_item page-item-2"><a href="http://mackuil.com/acerca-de/">Acerca de
-></li><li class="page_item page-item-467"><a href="http://mackuil.com/r-chuchito-habla-acerca-de-los-mackuiles/">R. Chuchito habla acerca de los mackuiles
-></li><li class="page_item page-item-1210"><a href="http://mackuil.com/campuseros-cuernavaca/">Campuseros Cuernavaca
-></li><li class="page_item page-item-1975 page_item_has_children"><a href="http://mackuil.com/photos/">Photos
-><ul class='children'><li class="page_item page-item-1976"><a href="http://mackuil.com/photos/temp/">temp
-></li><li class="page_item page-item-1977"><a href="http://mackuil.com/photos/5-de-diciembre-de-2011/">5 de diciembre de 2011
-></li><li class="page_item page-item-1978"><a href="http://mackuil.com/photos/cargas-moviles/">Cargas móviles
-></li><li class="page_item page-item-1979"><a href="http://mackuil.com/photos/wall-photos/">Wall Photos
-></li><li class="page_item page-item-1980"><a href="http://mackuil.com/photos/wall-photos-2/">Wall Photos
-></li><li class="page_item page-item-1981"><a href="http://mackuil.com/photos/profile-pictures/">Profile Pictures
-></li><li class="page_item page-item-1982"><a href="http://mackuil.com/photos/5mack/">5mack
-></li><li class="page_item page-item-1983"><a href="http://mackuil.com/photos/mobile-uploads/">Mobile Uploads
-></li><li class="page_item page-item-1984"><a href="http://mackuil.com/photos/22-de-junio-de-2011/">22 de junio de 2011
-></li><li class="page_item page-item-1985"><a href="http://mackuil.com/photos/%c2%bfquieres-ser-aurelio-malcovich/">¿Quieres ser Aurelio Malcovich?
-></li><li class="page_item page-item-1986"><a href="http://mackuil.com/photos/tepoz-11-el-regreso/">Tepoz 11 el regreso
-></li><li class="page_item page-item-1987"><a href="http://mackuil.com/photos/tepoz-11/">tepoz 11
-></li><li class="page_item page-item-1988"><a href="http://mackuil.com/photos/tnt-gt5/">tnt gt5
-></li><li class="page_item page-item-1989"><a href="http://mackuil.com/photos/en-la-escuelita-p/">En la escuelita =p
-></li><li class="page_item page-item-1990"><a href="http://mackuil.com/photos/varias/">Varias
-></li><li class="page_item page-item-1991"><a href="http://mackuil.com/photos/tepoz-08/">tepoz 08
-></li><li class="page_item page-item-1992"><a href="http://mackuil.com/photos/brinco-auro-jj-reyna/">Brinco Auro-JJ-Reyna
-></li><li class="page_item page-item-1993"><a href="http://mackuil.com/photos/cpmexico-2010/">#CPMéxico 2010
-></li><li class="page_item page-item-1994"><a href="http://mackuil.com/photos/ofrenda-2010/">Ofrenda 2010
-></li><li class="page_item page-item-1995"><a href="http://mackuil.com/photos/cumple-de-elisa/">Cumple de Elisa
-></li><li class="page_item page-item-1996"><a href="http://mackuil.com/photos/zombie-bday-2010/">Zombie BDay 2010
-></li><li class="page_item page-item-1997"><a href="http://mackuil.com/photos/bambara-bambara/">bambara bambara
-></li><li class="page_item page-item-1998"><a href="http://mackuil.com/photos/lan-mack/">Lan-Mack
-></li><li class="page_item page-item-1999"><a href="http://mackuil.com/photos/101010-2/">101010
-></li><li class="page_item page-item-2000"><a href="http://mackuil.com/photos/photos-of-me/">Photos of Me
-></li></ul></li><li class="page_item page-item-2118"><a href="http://mackuil.com/busqueda/">busqueda
-></li></ul></div>
+	<div class="sf-menu menu clearfix"><ul><li class="page_item page-item-2"><a href="http://mackuil.com/acerca-de/">Acerca de</a></li><li class="page_item page-item-467"><a href="http://mackuil.com/r-chuchito-habla-acerca-de-los-mackuiles/">R. Chuchito habla acerca de los mackuiles</a></li><li class="page_item page-item-1210"><a href="http://mackuil.com/campuseros-cuernavaca/">Campuseros Cuernavaca</a></li><li class="page_item page-item-1975 page_item_has_children"><a href="http://mackuil.com/photos/">Photos</a><ul class='children'><li class="page_item page-item-1976"><a href="http://mackuil.com/photos/temp/">temp</a></li><li class="page_item page-item-1977"><a href="http://mackuil.com/photos/5-de-diciembre-de-2011/">5 de diciembre de 2011</a></li><li class="page_item page-item-1978"><a href="http://mackuil.com/photos/cargas-moviles/">Cargas móviles</a></li><li class="page_item page-item-1979"><a href="http://mackuil.com/photos/wall-photos/">Wall Photos</a></li><li class="page_item page-item-1980"><a href="http://mackuil.com/photos/wall-photos-2/">Wall Photos</a></li><li class="page_item page-item-1981"><a href="http://mackuil.com/photos/profile-pictures/">Profile Pictures</a></li><li class="page_item page-item-1982"><a href="http://mackuil.com/photos/5mack/">5mack</a></li><li class="page_item page-item-1983"><a href="http://mackuil.com/photos/mobile-uploads/">Mobile Uploads</a></li><li class="page_item page-item-1984"><a href="http://mackuil.com/photos/22-de-junio-de-2011/">22 de junio de 2011</a></li><li class="page_item page-item-1985"><a href="http://mackuil.com/photos/%c2%bfquieres-ser-aurelio-malcovich/">¿Quieres ser Aurelio Malcovich?</a></li><li class="page_item page-item-1986"><a href="http://mackuil.com/photos/tepoz-11-el-regreso/">Tepoz 11 el regreso</a></li><li class="page_item page-item-1987"><a href="http://mackuil.com/photos/tepoz-11/">tepoz 11</a></li><li class="page_item page-item-1988"><a href="http://mackuil.com/photos/tnt-gt5/">tnt gt5</a></li><li class="page_item page-item-1989"><a href="http://mackuil.com/photos/en-la-escuelita-p/">En la escuelita =p</a></li><li class="page_item page-item-1990"><a href="http://mackuil.com/photos/varias/">Varias</a></li><li class="page_item page-item-1991"><a href="http://mackuil.com/photos/tepoz-08/">tepoz 08</a></li><li class="page_item page-item-1992"><a href="http://mackuil.com/photos/brinco-auro-jj-reyna/">Brinco Auro-JJ-Reyna</a></li><li class="page_item page-item-1993"><a href="http://mackuil.com/photos/cpmexico-2010/">#CPMéxico 2010</a></li><li class="page_item page-item-1994"><a href="http://mackuil.com/photos/ofrenda-2010/">Ofrenda 2010</a></li><li class="page_item page-item-1995"><a href="http://mackuil.com/photos/cumple-de-elisa/">Cumple de Elisa</a></li><li class="page_item page-item-1996"><a href="http://mackuil.com/photos/zombie-bday-2010/">Zombie BDay 2010</a></li><li class="page_item page-item-1997"><a href="http://mackuil.com/photos/bambara-bambara/">bambara bambara</a></li><li class="page_item page-item-1998"><a href="http://mackuil.com/photos/lan-mack/">Lan-Mack</a></li><li class="page_item page-item-1999"><a href="http://mackuil.com/photos/101010-2/">101010</a></li><li class="page_item page-item-2000"><a href="http://mackuil.com/photos/photos-of-me/">Photos of Me</a></li></ul></li><li class="page_item page-item-2118"><a href="http://mackuil.com/busqueda/">busqueda</a></li></ul></div>
 </div><!-- #top-menu -->
 
 <div id="header">
 
 	<div class="frases">
 <div style=" float:right; width:180px; padding-left:5px;margin-top:-3px; padding-right:3px">
-<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://mackuil.com" data-text="#DatoInutil: La letra “J”, es la única letra que no aparece en la tabla periódica. " data-lang="es" data-count="none" data-dnt="true"><img src="http://mackuil.com/imagenes/boton-compartir-twitter.png"  />
->
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://mackuil.com" data-text="#DatoInutil: La memoria de un pez dorado es de tres segundos." data-lang="es" data-count="none" data-dnt="true"><img src="http://mackuil.com/imagenes/boton-compartir-twitter.png"  /></a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-<a target="new" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Btitle%5D=Dato inútil: La letra “J”, es la única letra que no aparece en la tabla periódica. &amp;p%5Burl%5D=http%3A%2F%2Fwww.mackuil.com&amp;p%5Bsummary%5D=Como lo viste en el Blog Mackuil! Visitanos&amp;p%5Bimages%5D%5B0%5D=http%3A%2F%2Fmackuil.com%2Fimagenes%2Fmackuilfb.png"  /><img src="http://mackuil.com/imagenes/boton-compartir-facebook.png"  />
-> 
+<a target="new" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Btitle%5D=Dato inútil: La memoria de un pez dorado es de tres segundos.&amp;p%5Burl%5D=http%3A%2F%2Fwww.mackuil.com&amp;p%5Bsummary%5D=Como lo viste en el Blog Mackuil! Visitanos&amp;p%5Bimages%5D%5B0%5D=http%3A%2F%2Fmackuil.com%2Fimagenes%2Fmackuilfb.png"  /><img src="http://mackuil.com/imagenes/boton-compartir-facebook.png"  /></a> 
 </div>
 <div style="float:right;">
-<strong>Dato inútil:</strong> La letra “J”, es la única letra que no aparece en la tabla periódica. </div>
+<strong>Dato inútil:</strong> La memoria de un pez dorado es de tres segundos.</div>
 
 
 </div>
-		<div class="logo"><a href="http://mackuil.com"><img src="http://mackuil.com/imagenes/logo3.jpg"  />
->       	 
+		<div class="logo"><a href="http://mackuil.com"><img src="http://mackuil.com/imagenes/logo3.jpg"  /></a>       	 
         </div>       
    
-	<div class="izqlogo" align="center"><img src="http://mackuil.com/b/46.jpg" border="0" width="300" height="65"></div>
+	<div class="izqlogo" align="center"><img src="http://mackuil.com/b/47.jpg" border="0" width="300" height="65"></div>
 	
 </div>
 
@@ -113,20 +260,16 @@
 	<!-- Featured Slideshow -->
 	<div class="featured clearfix">
 				<div id="controls">
-			<a href="" class="prev">Previo
->
-			<a href="" class="next">Siguiente
->
+			<a href="" class="prev">Previo</a>
+			<a href="" class="next">Siguiente</a>
 		</div>
 				<div id="featured-slideshow">
 					
 						<div class="featured-slideshow-inner" >
 				<a class="featured-article" href="http://mackuil.com/2014/03/dead-space-gratis-en-origin-hasta-8-de-mayo-del-2014/" rel="bookmark">
-				<img width="738" height="250" src="http://mackuil.com/wp-content/uploads/deadspacefree-738x250.png" class="attachment-featured-slideshow-thumb wp-post-image" alt="LINK DEAD SPACE EN ORIGIN: https://www.origin.com/en-us/store/buy/dead-space-ANW.html La oportunidad perfecta para disfrutar de un nuevo clasico de supervivencia, ciencia ficcion y horror. Los chavos de origin llaman la atencion esta vez [&hellip;]" title="Dead Space gratis en Origin hasta 8 de mayo del 2014" />				
->
+				<img width="738" height="250" src="http://mackuil.com/wp-content/uploads/deadspacefree-738x250.png" class="attachment-featured-slideshow-thumb wp-post-image" alt="LINK DEAD SPACE EN ORIGIN: https://www.origin.com/en-us/store/buy/dead-space-ANW.html La oportunidad perfecta para disfrutar de un nuevo clasico de supervivencia, ciencia ficcion y horror. Los chavos de origin llaman la atencion esta vez [&hellip;]" title="Dead Space gratis en Origin hasta 8 de mayo del 2014" />				</a>
 				<div class="featured-entry">
-					<a class="entry-title" href="http://mackuil.com/2014/03/dead-space-gratis-en-origin-hasta-8-de-mayo-del-2014/" rel="bookmark">Dead Space gratis en Origin hasta 8 de mayo del 2014
->
+					<a class="entry-title" href="http://mackuil.com/2014/03/dead-space-gratis-en-origin-hasta-8-de-mayo-del-2014/" rel="bookmark">Dead Space gratis en Origin hasta 8 de mayo del 2014</a>
 					<div class="entry-summary"><p>LINK DEAD SPACE EN ORIGIN: https://www.origin.com/en-us/store/buy/dead-space-ANW.html La oportunidad perfecta para disfrutar de un nuevo clasico de supervivencia, ciencia ficcion y horror. Los chavos de origin llaman la atencion esta vez [&hellip;]</p>
 </div>
 					<div class="progress"></div>
@@ -134,11 +277,9 @@
 			</div>
 						<div class="featured-slideshow-inner" style="display: none">
 				<a class="featured-article" href="http://mackuil.com/2014/03/regalo-para-tu-hijo-ser-parte-de-dragon-ball/" rel="bookmark">
-				<img width="738" height="250" src="http://mackuil.com/wp-content/uploads/2014-03-07-18.38.20-738x250.png" class="attachment-featured-slideshow-thumb wp-post-image" alt="Un padre animador, geek y otaku le hizo un regalo inolvidable a su hijo en su cumpleaños numero 9. Produjo un cortometraje animado en el que el y su hijo [&hellip;]" title="Regalo para tu hijo, ser parte de Dragon Ball" />				
->
+				<img width="738" height="250" src="http://mackuil.com/wp-content/uploads/2014-03-07-18.38.20-738x250.png" class="attachment-featured-slideshow-thumb wp-post-image" alt="Un padre animador, geek y otaku le hizo un regalo inolvidable a su hijo en su cumpleaños numero 9. Produjo un cortometraje animado en el que el y su hijo [&hellip;]" title="Regalo para tu hijo, ser parte de Dragon Ball" />				</a>
 				<div class="featured-entry">
-					<a class="entry-title" href="http://mackuil.com/2014/03/regalo-para-tu-hijo-ser-parte-de-dragon-ball/" rel="bookmark">Regalo para tu hijo, ser parte de Dragon Ball
->
+					<a class="entry-title" href="http://mackuil.com/2014/03/regalo-para-tu-hijo-ser-parte-de-dragon-ball/" rel="bookmark">Regalo para tu hijo, ser parte de Dragon Ball</a>
 					<div class="entry-summary"><p>Un padre animador, geek y otaku le hizo un regalo inolvidable a su hijo en su cumpleaños numero 9. Produjo un cortometraje animado en el que el y su hijo [&hellip;]</p>
 </div>
 					<div class="progress"></div>
@@ -146,11 +287,9 @@
 			</div>
 						<div class="featured-slideshow-inner" style="display: none">
 				<a class="featured-article" href="http://mackuil.com/2014/02/murdered-soul-suspect-resuleve-tu-homicidio/" rel="bookmark">
-				<img width="738" height="250" src="http://mackuil.com/wp-content/uploads/1370631737-murdered-soul-suspect-5-738x250.jpg" class="attachment-featured-slideshow-thumb wp-post-image" alt="Un juego que llama la atencion por la dificultad de los elementos a presentar en un escenario donde el protagonista es un fantasma con todas sus implicaciones. Eres el mejoir [&hellip;]" title="Murdered Soul Suspect: Resuleve tu homicidio" />				
->
+				<img width="738" height="250" src="http://mackuil.com/wp-content/uploads/1370631737-murdered-soul-suspect-5-738x250.jpg" class="attachment-featured-slideshow-thumb wp-post-image" alt="Un juego que llama la atencion por la dificultad de los elementos a presentar en un escenario donde el protagonista es un fantasma con todas sus implicaciones. Eres el mejoir [&hellip;]" title="Murdered Soul Suspect: Resuleve tu homicidio" />				</a>
 				<div class="featured-entry">
-					<a class="entry-title" href="http://mackuil.com/2014/02/murdered-soul-suspect-resuleve-tu-homicidio/" rel="bookmark">Murdered Soul Suspect: Resuleve tu homicidio
->
+					<a class="entry-title" href="http://mackuil.com/2014/02/murdered-soul-suspect-resuleve-tu-homicidio/" rel="bookmark">Murdered Soul Suspect: Resuleve tu homicidio</a>
 					<div class="entry-summary"><p>Un juego que llama la atencion por la dificultad de los elementos a presentar en un escenario donde el protagonista es un fantasma con todas sus implicaciones. Eres el mejoir [&hellip;]</p>
 </div>
 					<div class="progress"></div>
@@ -158,11 +297,9 @@
 			</div>
 						<div class="featured-slideshow-inner" style="display: none">
 				<a class="featured-article" href="http://mackuil.com/2013/12/steam-box-beta-y-steam-os-proximo-viernes-13-de-diciembre-2013/" rel="bookmark">
-				<img width="637" height="250" src="http://mackuil.com/wp-content/uploads/collage-637x250.jpg" class="attachment-featured-slideshow-thumb wp-post-image" alt="Finalmente el momento ha llegado y las maquinas prmetidos a los afortunados beta testers estan listas para ser enviadas (esa es la buena noticia), la mala noticia es que se [&hellip;]" title="Steam Box Beta y Steam OS proximo Viernes 13 de Diciembre 2013" />				
->
+				<img width="637" height="250" src="http://mackuil.com/wp-content/uploads/collage-637x250.jpg" class="attachment-featured-slideshow-thumb wp-post-image" alt="Finalmente el momento ha llegado y las maquinas prmetidos a los afortunados beta testers estan listas para ser enviadas (esa es la buena noticia), la mala noticia es que se [&hellip;]" title="Steam Box Beta y Steam OS proximo Viernes 13 de Diciembre 2013" />				</a>
 				<div class="featured-entry">
-					<a class="entry-title" href="http://mackuil.com/2013/12/steam-box-beta-y-steam-os-proximo-viernes-13-de-diciembre-2013/" rel="bookmark">Steam Box Beta y Steam OS proximo Viernes 13 de Diciembre 2013
->
+					<a class="entry-title" href="http://mackuil.com/2013/12/steam-box-beta-y-steam-os-proximo-viernes-13-de-diciembre-2013/" rel="bookmark">Steam Box Beta y Steam OS proximo Viernes 13 de Diciembre 2013</a>
 					<div class="entry-summary"><p>Finalmente el momento ha llegado y las maquinas prmetidos a los afortunados beta testers estan listas para ser enviadas (esa es la buena noticia), la mala noticia es que se [&hellip;]</p>
 </div>
 					<div class="progress"></div>
@@ -170,11 +307,9 @@
 			</div>
 						<div class="featured-slideshow-inner" style="display: none">
 				<a class="featured-article" href="http://mackuil.com/2013/10/saga-de-la-fundacion-de-asimov-en-manga/" rel="bookmark">
-				<img width="540" height="250" src="http://mackuil.com/wp-content/uploads/FUNDACION-540x250.jpg" class="attachment-featured-slideshow-thumb wp-post-image" alt="Los orientales creen que pueden hacer lo que por años directores y escritores no han podido, darle vida a una de las grandes sagas de ciencia ficcion del padre Isaac [&hellip;]" title="Saga de la Fundacion de Asimov&#8230; en manga" />				
->
+				<img width="540" height="250" src="http://mackuil.com/wp-content/uploads/FUNDACION-540x250.jpg" class="attachment-featured-slideshow-thumb wp-post-image" alt="Los orientales creen que pueden hacer lo que por años directores y escritores no han podido, darle vida a una de las grandes sagas de ciencia ficcion del padre Isaac [&hellip;]" title="Saga de la Fundacion de Asimov&#8230; en manga" />				</a>
 				<div class="featured-entry">
-					<a class="entry-title" href="http://mackuil.com/2013/10/saga-de-la-fundacion-de-asimov-en-manga/" rel="bookmark">Saga de la Fundacion de Asimov&#8230; en manga
->
+					<a class="entry-title" href="http://mackuil.com/2013/10/saga-de-la-fundacion-de-asimov-en-manga/" rel="bookmark">Saga de la Fundacion de Asimov&#8230; en manga</a>
 					<div class="entry-summary"><p>Los orientales creen que pueden hacer lo que por años directores y escritores no han podido, darle vida a una de las grandes sagas de ciencia ficcion del padre Isaac [&hellip;]</p>
 </div>
 					<div class="progress"></div>
@@ -182,11 +317,9 @@
 			</div>
 						<div class="featured-slideshow-inner" style="display: none">
 				<a class="featured-article" href="http://mackuil.com/2013/09/ios-7-lanzamiento-oficial-instalacion-y-critica/" rel="bookmark">
-				<img width="650" height="250" src="http://mackuil.com/wp-content/uploads/ios7compatibilidad-650x250.jpg" class="attachment-featured-slideshow-thumb wp-post-image" alt="Hoy 18 de septiembre del 2013 Apple ha lanzado lo que es el nuevo sistema operativo para sus plataformas moviles (iPad, iPhone, iPod) iOS7. La expectativa que se ha generado [&hellip;]" title="iOS 7 lanzamiento oficial, instalacion y critica" />				
->
+				<img width="650" height="250" src="http://mackuil.com/wp-content/uploads/ios7compatibilidad-650x250.jpg" class="attachment-featured-slideshow-thumb wp-post-image" alt="Hoy 18 de septiembre del 2013 Apple ha lanzado lo que es el nuevo sistema operativo para sus plataformas moviles (iPad, iPhone, iPod) iOS7. La expectativa que se ha generado [&hellip;]" title="iOS 7 lanzamiento oficial, instalacion y critica" />				</a>
 				<div class="featured-entry">
-					<a class="entry-title" href="http://mackuil.com/2013/09/ios-7-lanzamiento-oficial-instalacion-y-critica/" rel="bookmark">iOS 7 lanzamiento oficial, instalacion y critica
->
+					<a class="entry-title" href="http://mackuil.com/2013/09/ios-7-lanzamiento-oficial-instalacion-y-critica/" rel="bookmark">iOS 7 lanzamiento oficial, instalacion y critica</a>
 					<div class="entry-summary"><p>Hoy 18 de septiembre del 2013 Apple ha lanzado lo que es el nuevo sistema operativo para sus plataformas moviles (iPad, iPhone, iPod) iOS7. La expectativa que se ha generado [&hellip;]</p>
 </div>
 					<div class="progress"></div>
@@ -201,133 +334,93 @@
 <div id="index-featured2">
 	<div class="home-title">Ultimas</div>
 	<ul class="hfeed posts-quick clearfix">		<li class="post-2460 post type-post status-publish format-standard has-post-thumbnail hentry category-juegos category-pc category-starcraft-2 category-starcraft-ii category-videojuegos category-videos tag-legacy-of-the-void tag-starcraft-3 tag-starcraft-2-2 tag-starcraft-ii-2 clearfix">
-			<div class="entry-thumbnails"><a class="entry-thumbnails-link" href="http://mackuil.com/2014/11/starcraft-2-legacy-of-the-void-trailer-oblivion/"><img width="115" height="115" src="http://mackuil.com/wp-content/uploads/maxresdefault-115x115.jpg" class="attachment-quick-preview-thumb wp-post-image" alt="Listos para la tercera entrega de la segunda parte de la saga espacial favorita: Como siempre esperamos ansios el beta, si aun no se han suscrito esta es la liga: [&hellip;]" title="Starcraft 2: Legacy of the Void Trailer Oblivion" />
-></div><h3 class="entry-title"><a href="http://mackuil.com/2014/11/starcraft-2-legacy-of-the-void-trailer-oblivion/" rel="bookmark">Starcraft 2: Legacy of the Void Trailer Oblivion
-></h3>			<div class="entry-summary">
+			<div class="entry-thumbnails"><a class="entry-thumbnails-link" href="http://mackuil.com/2014/11/starcraft-2-legacy-of-the-void-trailer-oblivion/"><img width="115" height="115" src="http://mackuil.com/wp-content/uploads/maxresdefault-115x115.jpg" class="attachment-quick-preview-thumb wp-post-image" alt="Listos para la tercera entrega de la segunda parte de la saga espacial favorita: Como siempre esperamos ansios el beta, si aun no se han suscrito esta es la liga: [&hellip;]" title="Starcraft 2: Legacy of the Void Trailer Oblivion" /></a></div><h3 class="entry-title"><a href="http://mackuil.com/2014/11/starcraft-2-legacy-of-the-void-trailer-oblivion/" rel="bookmark">Starcraft 2: Legacy of the Void Trailer Oblivion</a></h3>			<div class="entry-summary">
 				<div class="entry-info">
-					<abbr class="published" title="2014-11-08T14:25:03+00:00">Publicado en 8 noviembre, 2014
-bbr> | <span>No hay comentarios</span>
+					<abbr class="published" title="2014-11-08T14:25:03+00:00">Publicado en 8 noviembre, 2014</abbr> | <span>No hay comentarios</span>
 				</div>
 				Listos para la tercera entrega de la segunda parte de la saga espacial favorita: Como siempre esperamos ansios el beta, si aun no se han suscrito esta es la liga: [&hellip;]				<p class="quick-read-more"><a href="http://mackuil.com/2014/11/starcraft-2-legacy-of-the-void-trailer-oblivion/" title="Enlace Permanente a Starcraft 2: Legacy of the Void Trailer Oblivion">
-				Sigue Leyendo...				
-></p>
+				Sigue Leyendo...				</a></p>
 			</div>	
 		</li>
 				<li class="post-2455 post type-post status-publish format-standard has-post-thumbnail hentry category-peliculas category-videos category-zombie clearfix">
-			<div class="entry-thumbnails"><a class="entry-thumbnails-link" href="http://mackuil.com/2014/06/goal-of-the-dead/"><img width="115" height="115" src="http://mackuil.com/wp-content/uploads/366116-goal-of-the-dead-620x0-2-115x115.jpg" class="attachment-quick-preview-thumb wp-post-image" alt="En esta pagina no hablamos de futbol pero si de zombies, asi que les presento el trailer de la paelicula esperada para este mundial, mucha atencion a los detalles." title="Goal of the Dead" />
-></div><h3 class="entry-title"><a href="http://mackuil.com/2014/06/goal-of-the-dead/" rel="bookmark">Goal of the Dead
-></h3>			<div class="entry-summary">
+			<div class="entry-thumbnails"><a class="entry-thumbnails-link" href="http://mackuil.com/2014/06/goal-of-the-dead/"><img width="115" height="115" src="http://mackuil.com/wp-content/uploads/366116-goal-of-the-dead-620x0-2-115x115.jpg" class="attachment-quick-preview-thumb wp-post-image" alt="En esta pagina no hablamos de futbol pero si de zombies, asi que les presento el trailer de la paelicula esperada para este mundial, mucha atencion a los detalles." title="Goal of the Dead" /></a></div><h3 class="entry-title"><a href="http://mackuil.com/2014/06/goal-of-the-dead/" rel="bookmark">Goal of the Dead</a></h3>			<div class="entry-summary">
 				<div class="entry-info">
-					<abbr class="published" title="2014-06-13T12:50:52+00:00">Publicado en 13 junio, 2014
-bbr> | <span>No hay comentarios</span>
+					<abbr class="published" title="2014-06-13T12:50:52+00:00">Publicado en 13 junio, 2014</abbr> | <span>No hay comentarios</span>
 				</div>
 				En esta pagina no hablamos de futbol pero si de zombies, asi que les presento el trailer de la paelicula esperada para este mundial, mucha atencion a los detalles.				<p class="quick-read-more"><a href="http://mackuil.com/2014/06/goal-of-the-dead/" title="Enlace Permanente a Goal of the Dead">
-				Sigue Leyendo...				
-></p>
+				Sigue Leyendo...				</a></p>
 			</div>	
 		</li>
 				<li class="post-2449 post type-post status-publish format-standard has-post-thumbnail hentry category-geek category-imagenes clearfix">
-			<div class="entry-thumbnails"><a class="entry-thumbnails-link" href="http://mackuil.com/2014/04/sigues-con-tu-dado-de-6-caras-checa-estos/"><img width="115" height="115" src="http://mackuil.com/wp-content/uploads/roleplaying_dices_by_svenart-d3hjxbe-115x115.jpg" class="attachment-quick-preview-thumb wp-post-image" alt="&nbsp; Si les gustan los dados aqui les dejo una imagen, no es foto:" title="Sigues con tu dado de 6 caras? checa estos:" />
-></div><h3 class="entry-title"><a href="http://mackuil.com/2014/04/sigues-con-tu-dado-de-6-caras-checa-estos/" rel="bookmark">Sigues con tu dado de 6 caras? checa estos:
-></h3>			<div class="entry-summary">
+			<div class="entry-thumbnails"><a class="entry-thumbnails-link" href="http://mackuil.com/2014/04/sigues-con-tu-dado-de-6-caras-checa-estos/"><img width="115" height="115" src="http://mackuil.com/wp-content/uploads/roleplaying_dices_by_svenart-d3hjxbe-115x115.jpg" class="attachment-quick-preview-thumb wp-post-image" alt="&nbsp; Si les gustan los dados aqui les dejo una imagen, no es foto:" title="Sigues con tu dado de 6 caras? checa estos:" /></a></div><h3 class="entry-title"><a href="http://mackuil.com/2014/04/sigues-con-tu-dado-de-6-caras-checa-estos/" rel="bookmark">Sigues con tu dado de 6 caras? checa estos:</a></h3>			<div class="entry-summary">
 				<div class="entry-info">
-					<abbr class="published" title="2014-04-25T02:57:04+00:00">Publicado en 25 abril, 2014
-bbr> | <span>No hay comentarios</span>
+					<abbr class="published" title="2014-04-25T02:57:04+00:00">Publicado en 25 abril, 2014</abbr> | <span>No hay comentarios</span>
 				</div>
 				&nbsp; Si les gustan los dados aqui les dejo una imagen, no es foto:				<p class="quick-read-more"><a href="http://mackuil.com/2014/04/sigues-con-tu-dado-de-6-caras-checa-estos/" title="Enlace Permanente a Sigues con tu dado de 6 caras? checa estos:">
-				Sigue Leyendo...				
-></p>
+				Sigue Leyendo...				</a></p>
 			</div>	
 		</li>
 				<li class="post-2445 post type-post status-publish format-standard has-post-thumbnail hentry category-destacado category-videojuegos tag-dead-space tag-free tag-origin clearfix">
-			<div class="entry-thumbnails"><a class="entry-thumbnails-link" href="http://mackuil.com/2014/03/dead-space-gratis-en-origin-hasta-8-de-mayo-del-2014/"><img width="115" height="115" src="http://mackuil.com/wp-content/uploads/deadspacefree-115x115.png" class="attachment-quick-preview-thumb wp-post-image" alt="LINK DEAD SPACE EN ORIGIN: https://www.origin.com/en-us/store/buy/dead-space-ANW.html La oportunidad perfecta para disfrutar de un nuevo clasico de supervivencia, ciencia ficcion y horror. Los chavos de origin llaman la atencion esta vez [&hellip;]" title="Dead Space gratis en Origin hasta 8 de mayo del 2014" />
-></div><h3 class="entry-title"><a href="http://mackuil.com/2014/03/dead-space-gratis-en-origin-hasta-8-de-mayo-del-2014/" rel="bookmark">Dead Space gratis en Origin hasta 8 de mayo del 2014
-></h3>			<div class="entry-summary">
+			<div class="entry-thumbnails"><a class="entry-thumbnails-link" href="http://mackuil.com/2014/03/dead-space-gratis-en-origin-hasta-8-de-mayo-del-2014/"><img width="115" height="115" src="http://mackuil.com/wp-content/uploads/deadspacefree-115x115.png" class="attachment-quick-preview-thumb wp-post-image" alt="LINK DEAD SPACE EN ORIGIN: https://www.origin.com/en-us/store/buy/dead-space-ANW.html La oportunidad perfecta para disfrutar de un nuevo clasico de supervivencia, ciencia ficcion y horror. Los chavos de origin llaman la atencion esta vez [&hellip;]" title="Dead Space gratis en Origin hasta 8 de mayo del 2014" /></a></div><h3 class="entry-title"><a href="http://mackuil.com/2014/03/dead-space-gratis-en-origin-hasta-8-de-mayo-del-2014/" rel="bookmark">Dead Space gratis en Origin hasta 8 de mayo del 2014</a></h3>			<div class="entry-summary">
 				<div class="entry-info">
-					<abbr class="published" title="2014-03-27T18:09:59+00:00">Publicado en 27 marzo, 2014
-bbr> | <span>No hay comentarios</span>
+					<abbr class="published" title="2014-03-27T18:09:59+00:00">Publicado en 27 marzo, 2014</abbr> | <span>No hay comentarios</span>
 				</div>
 				LINK DEAD SPACE EN ORIGIN: https://www.origin.com/en-us/store/buy/dead-space-ANW.html La oportunidad perfecta para disfrutar de un nuevo clasico de supervivencia, ciencia ficcion y horror. Los chavos de origin llaman la atencion esta vez [&hellip;]				<p class="quick-read-more"><a href="http://mackuil.com/2014/03/dead-space-gratis-en-origin-hasta-8-de-mayo-del-2014/" title="Enlace Permanente a Dead Space gratis en Origin hasta 8 de mayo del 2014">
-				Sigue Leyendo...				
-></p>
+				Sigue Leyendo...				</a></p>
 			</div>	
 		</li>
 				<li class="post-2441 post type-post status-publish format-standard has-post-thumbnail hentry category-animaciones category-anime category-curiosidades category-destacado category-geek category-videos clearfix">
-			<div class="entry-thumbnails"><a class="entry-thumbnails-link" href="http://mackuil.com/2014/03/regalo-para-tu-hijo-ser-parte-de-dragon-ball/"><img width="115" height="115" src="http://mackuil.com/wp-content/uploads/2014-03-07-18.38.20-115x115.png" class="attachment-quick-preview-thumb wp-post-image" alt="Un padre animador, geek y otaku le hizo un regalo inolvidable a su hijo en su cumpleaños numero 9. Produjo un cortometraje animado en el que el y su hijo [&hellip;]" title="Regalo para tu hijo, ser parte de Dragon Ball" />
-></div><h3 class="entry-title"><a href="http://mackuil.com/2014/03/regalo-para-tu-hijo-ser-parte-de-dragon-ball/" rel="bookmark">Regalo para tu hijo, ser parte de Dragon Ball
-></h3>			<div class="entry-summary">
+			<div class="entry-thumbnails"><a class="entry-thumbnails-link" href="http://mackuil.com/2014/03/regalo-para-tu-hijo-ser-parte-de-dragon-ball/"><img width="115" height="115" src="http://mackuil.com/wp-content/uploads/2014-03-07-18.38.20-115x115.png" class="attachment-quick-preview-thumb wp-post-image" alt="Un padre animador, geek y otaku le hizo un regalo inolvidable a su hijo en su cumpleaños numero 9. Produjo un cortometraje animado en el que el y su hijo [&hellip;]" title="Regalo para tu hijo, ser parte de Dragon Ball" /></a></div><h3 class="entry-title"><a href="http://mackuil.com/2014/03/regalo-para-tu-hijo-ser-parte-de-dragon-ball/" rel="bookmark">Regalo para tu hijo, ser parte de Dragon Ball</a></h3>			<div class="entry-summary">
 				<div class="entry-info">
-					<abbr class="published" title="2014-03-07T18:43:12+00:00">Publicado en 7 marzo, 2014
-bbr> | <span>No hay comentarios</span>
+					<abbr class="published" title="2014-03-07T18:43:12+00:00">Publicado en 7 marzo, 2014</abbr> | <span>No hay comentarios</span>
 				</div>
 				Un padre animador, geek y otaku le hizo un regalo inolvidable a su hijo en su cumpleaños numero 9. Produjo un cortometraje animado en el que el y su hijo [&hellip;]				<p class="quick-read-more"><a href="http://mackuil.com/2014/03/regalo-para-tu-hijo-ser-parte-de-dragon-ball/" title="Enlace Permanente a Regalo para tu hijo, ser parte de Dragon Ball">
-				Sigue Leyendo...				
-></p>
+				Sigue Leyendo...				</a></p>
 			</div>	
 		</li>
 				<li class="post-2436 post type-post status-publish format-standard has-post-thumbnail hentry category-curiosidades category-videos tag-simpsons clearfix">
-			<div class="entry-thumbnails"><a class="entry-thumbnails-link" href="http://mackuil.com/2014/03/la-pelicula-de-macbein-en-los-simpsons/"><img width="115" height="115" src="http://mackuil.com/wp-content/uploads/mcbain-115x115.jpg" class="attachment-quick-preview-thumb wp-post-image" alt="En las primeras temporadas de los simpsons (las buenas) la produccion hizo una pelicula de Mcbein, este personaje que satiriza a los hombres de accion en las peliculas como Arnold [&hellip;]" title="La pelicula de Macbein en los Simpsons" />
-></div><h3 class="entry-title"><a href="http://mackuil.com/2014/03/la-pelicula-de-macbein-en-los-simpsons/" rel="bookmark">La pelicula de Macbein en los Simpsons
-></h3>			<div class="entry-summary">
+			<div class="entry-thumbnails"><a class="entry-thumbnails-link" href="http://mackuil.com/2014/03/la-pelicula-de-macbein-en-los-simpsons/"><img width="115" height="115" src="http://mackuil.com/wp-content/uploads/mcbain-115x115.jpg" class="attachment-quick-preview-thumb wp-post-image" alt="En las primeras temporadas de los simpsons (las buenas) la produccion hizo una pelicula de Mcbein, este personaje que satiriza a los hombres de accion en las peliculas como Arnold [&hellip;]" title="La pelicula de Macbein en los Simpsons" /></a></div><h3 class="entry-title"><a href="http://mackuil.com/2014/03/la-pelicula-de-macbein-en-los-simpsons/" rel="bookmark">La pelicula de Macbein en los Simpsons</a></h3>			<div class="entry-summary">
 				<div class="entry-info">
-					<abbr class="published" title="2014-03-07T18:24:37+00:00">Publicado en 7 marzo, 2014
-bbr> | <span>No hay comentarios</span>
+					<abbr class="published" title="2014-03-07T18:24:37+00:00">Publicado en 7 marzo, 2014</abbr> | <span>No hay comentarios</span>
 				</div>
 				En las primeras temporadas de los simpsons (las buenas) la produccion hizo una pelicula de Mcbein, este personaje que satiriza a los hombres de accion en las peliculas como Arnold [&hellip;]				<p class="quick-read-more"><a href="http://mackuil.com/2014/03/la-pelicula-de-macbein-en-los-simpsons/" title="Enlace Permanente a La pelicula de Macbein en los Simpsons">
-				Sigue Leyendo...				
-></p>
+				Sigue Leyendo...				</a></p>
 			</div>	
 		</li>
 				<li class="post-2432 post type-post status-publish format-standard has-post-thumbnail hentry category-cine category-peliculas category-videos clearfix">
-			<div class="entry-thumbnails"><a class="entry-thumbnails-link" href="http://mackuil.com/2014/02/app-la-pelicula-permitido-usar-smartphone/"><img width="115" height="115" src="http://mackuil.com/wp-content/uploads/appdefilm1-115x115.jpg" class="attachment-quick-preview-thumb wp-post-image" alt="La peli donde si estará permitido sacar tu celular, bajar la app, interactuar, etc con un guión pésimo XD. Los holandeses estan a punto de experimentar un evento desmotivante, por [&hellip;]" title="App la pelicula &#8211; Permitido usar smartphone" />
-></div><h3 class="entry-title"><a href="http://mackuil.com/2014/02/app-la-pelicula-permitido-usar-smartphone/" rel="bookmark">App la pelicula &#8211; Permitido usar smartphone
-></h3>			<div class="entry-summary">
+			<div class="entry-thumbnails"><a class="entry-thumbnails-link" href="http://mackuil.com/2014/02/app-la-pelicula-permitido-usar-smartphone/"><img width="115" height="115" src="http://mackuil.com/wp-content/uploads/appdefilm1-115x115.jpg" class="attachment-quick-preview-thumb wp-post-image" alt="La peli donde si estará permitido sacar tu celular, bajar la app, interactuar, etc con un guión pésimo XD. Los holandeses estan a punto de experimentar un evento desmotivante, por [&hellip;]" title="App la pelicula &#8211; Permitido usar smartphone" /></a></div><h3 class="entry-title"><a href="http://mackuil.com/2014/02/app-la-pelicula-permitido-usar-smartphone/" rel="bookmark">App la pelicula &#8211; Permitido usar smartphone</a></h3>			<div class="entry-summary">
 				<div class="entry-info">
-					<abbr class="published" title="2014-02-25T18:56:56+00:00">Publicado en 25 febrero, 2014
-bbr> | <span>No hay comentarios</span>
+					<abbr class="published" title="2014-02-25T18:56:56+00:00">Publicado en 25 febrero, 2014</abbr> | <span>No hay comentarios</span>
 				</div>
 				La peli donde si estará permitido sacar tu celular, bajar la app, interactuar, etc con un guión pésimo XD. Los holandeses estan a punto de experimentar un evento desmotivante, por [&hellip;]				<p class="quick-read-more"><a href="http://mackuil.com/2014/02/app-la-pelicula-permitido-usar-smartphone/" title="Enlace Permanente a App la pelicula &#8211; Permitido usar smartphone">
-				Sigue Leyendo...				
-></p>
+				Sigue Leyendo...				</a></p>
 			</div>	
 		</li>
 				<li class="post-2427 post type-post status-publish format-standard has-post-thumbnail hentry category-destacado category-videojuegos clearfix">
-			<div class="entry-thumbnails"><a class="entry-thumbnails-link" href="http://mackuil.com/2014/02/murdered-soul-suspect-resuleve-tu-homicidio/"><img width="115" height="115" src="http://mackuil.com/wp-content/uploads/1370631737-murdered-soul-suspect-5-115x115.jpg" class="attachment-quick-preview-thumb wp-post-image" alt="Un juego que llama la atencion por la dificultad de los elementos a presentar en un escenario donde el protagonista es un fantasma con todas sus implicaciones. Eres el mejoir [&hellip;]" title="Murdered Soul Suspect: Resuleve tu homicidio" />
-></div><h3 class="entry-title"><a href="http://mackuil.com/2014/02/murdered-soul-suspect-resuleve-tu-homicidio/" rel="bookmark">Murdered Soul Suspect: Resuleve tu homicidio
-></h3>			<div class="entry-summary">
+			<div class="entry-thumbnails"><a class="entry-thumbnails-link" href="http://mackuil.com/2014/02/murdered-soul-suspect-resuleve-tu-homicidio/"><img width="115" height="115" src="http://mackuil.com/wp-content/uploads/1370631737-murdered-soul-suspect-5-115x115.jpg" class="attachment-quick-preview-thumb wp-post-image" alt="Un juego que llama la atencion por la dificultad de los elementos a presentar en un escenario donde el protagonista es un fantasma con todas sus implicaciones. Eres el mejoir [&hellip;]" title="Murdered Soul Suspect: Resuleve tu homicidio" /></a></div><h3 class="entry-title"><a href="http://mackuil.com/2014/02/murdered-soul-suspect-resuleve-tu-homicidio/" rel="bookmark">Murdered Soul Suspect: Resuleve tu homicidio</a></h3>			<div class="entry-summary">
 				<div class="entry-info">
-					<abbr class="published" title="2014-02-14T05:36:59+00:00">Publicado en 14 febrero, 2014
-bbr> | <span>No hay comentarios</span>
+					<abbr class="published" title="2014-02-14T05:36:59+00:00">Publicado en 14 febrero, 2014</abbr> | <span>No hay comentarios</span>
 				</div>
 				Un juego que llama la atencion por la dificultad de los elementos a presentar en un escenario donde el protagonista es un fantasma con todas sus implicaciones. Eres el mejoir [&hellip;]				<p class="quick-read-more"><a href="http://mackuil.com/2014/02/murdered-soul-suspect-resuleve-tu-homicidio/" title="Enlace Permanente a Murdered Soul Suspect: Resuleve tu homicidio">
-				Sigue Leyendo...				
-></p>
+				Sigue Leyendo...				</a></p>
 			</div>	
 		</li>
 				<li class="post-2419 post type-post status-publish format-standard has-post-thumbnail hentry category-destacado category-geek clearfix">
-			<div class="entry-thumbnails"><a class="entry-thumbnails-link" href="http://mackuil.com/2013/12/steam-box-beta-y-steam-os-proximo-viernes-13-de-diciembre-2013/"><img width="115" height="115" src="http://mackuil.com/wp-content/uploads/collage-115x115.jpg" class="attachment-quick-preview-thumb wp-post-image" alt="Finalmente el momento ha llegado y las maquinas prmetidos a los afortunados beta testers estan listas para ser enviadas (esa es la buena noticia), la mala noticia es que se [&hellip;]" title="Steam Box Beta y Steam OS proximo Viernes 13 de Diciembre 2013" />
-></div><h3 class="entry-title"><a href="http://mackuil.com/2013/12/steam-box-beta-y-steam-os-proximo-viernes-13-de-diciembre-2013/" rel="bookmark">Steam Box Beta y Steam OS proximo Viernes 13 de Diciembre 2013
-></h3>			<div class="entry-summary">
+			<div class="entry-thumbnails"><a class="entry-thumbnails-link" href="http://mackuil.com/2013/12/steam-box-beta-y-steam-os-proximo-viernes-13-de-diciembre-2013/"><img width="115" height="115" src="http://mackuil.com/wp-content/uploads/collage-115x115.jpg" class="attachment-quick-preview-thumb wp-post-image" alt="Finalmente el momento ha llegado y las maquinas prmetidos a los afortunados beta testers estan listas para ser enviadas (esa es la buena noticia), la mala noticia es que se [&hellip;]" title="Steam Box Beta y Steam OS proximo Viernes 13 de Diciembre 2013" /></a></div><h3 class="entry-title"><a href="http://mackuil.com/2013/12/steam-box-beta-y-steam-os-proximo-viernes-13-de-diciembre-2013/" rel="bookmark">Steam Box Beta y Steam OS proximo Viernes 13 de Diciembre 2013</a></h3>			<div class="entry-summary">
 				<div class="entry-info">
-					<abbr class="published" title="2013-12-11T20:19:34+00:00">Publicado en 11 diciembre, 2013
-bbr> | <span>No hay comentarios</span>
+					<abbr class="published" title="2013-12-11T20:19:34+00:00">Publicado en 11 diciembre, 2013</abbr> | <span>No hay comentarios</span>
 				</div>
 				Finalmente el momento ha llegado y las maquinas prmetidos a los afortunados beta testers estan listas para ser enviadas (esa es la buena noticia), la mala noticia es que se [&hellip;]				<p class="quick-read-more"><a href="http://mackuil.com/2013/12/steam-box-beta-y-steam-os-proximo-viernes-13-de-diciembre-2013/" title="Enlace Permanente a Steam Box Beta y Steam OS proximo Viernes 13 de Diciembre 2013">
-				Sigue Leyendo...				
-></p>
+				Sigue Leyendo...				</a></p>
 			</div>	
 		</li>
 				<li class="post-2410 post type-post status-publish format-standard has-post-thumbnail hentry category-curiosidades category-destacado clearfix">
-			<div class="entry-thumbnails"><a class="entry-thumbnails-link" href="http://mackuil.com/2013/10/saga-de-la-fundacion-de-asimov-en-manga/"><img width="115" height="115" src="http://mackuil.com/wp-content/uploads/FUNDACION-115x115.jpg" class="attachment-quick-preview-thumb wp-post-image" alt="Los orientales creen que pueden hacer lo que por años directores y escritores no han podido, darle vida a una de las grandes sagas de ciencia ficcion del padre Isaac [&hellip;]" title="Saga de la Fundacion de Asimov&#8230; en manga" />
-></div><h3 class="entry-title"><a href="http://mackuil.com/2013/10/saga-de-la-fundacion-de-asimov-en-manga/" rel="bookmark">Saga de la Fundacion de Asimov&#8230; en manga
-></h3>			<div class="entry-summary">
+			<div class="entry-thumbnails"><a class="entry-thumbnails-link" href="http://mackuil.com/2013/10/saga-de-la-fundacion-de-asimov-en-manga/"><img width="115" height="115" src="http://mackuil.com/wp-content/uploads/FUNDACION-115x115.jpg" class="attachment-quick-preview-thumb wp-post-image" alt="Los orientales creen que pueden hacer lo que por años directores y escritores no han podido, darle vida a una de las grandes sagas de ciencia ficcion del padre Isaac [&hellip;]" title="Saga de la Fundacion de Asimov&#8230; en manga" /></a></div><h3 class="entry-title"><a href="http://mackuil.com/2013/10/saga-de-la-fundacion-de-asimov-en-manga/" rel="bookmark">Saga de la Fundacion de Asimov&#8230; en manga</a></h3>			<div class="entry-summary">
 				<div class="entry-info">
-					<abbr class="published" title="2013-10-24T17:38:18+00:00">Publicado en 24 octubre, 2013
-bbr> | <span>No hay comentarios</span>
+					<abbr class="published" title="2013-10-24T17:38:18+00:00">Publicado en 24 octubre, 2013</abbr> | <span>No hay comentarios</span>
 				</div>
 				Los orientales creen que pueden hacer lo que por años directores y escritores no han podido, darle vida a una de las grandes sagas de ciencia ficcion del padre Isaac [&hellip;]				<p class="quick-read-more"><a href="http://mackuil.com/2013/10/saga-de-la-fundacion-de-asimov-en-manga/" title="Enlace Permanente a Saga de la Fundacion de Asimov&#8230; en manga">
-				Sigue Leyendo...				
-></p>
+				Sigue Leyendo...				</a></p>
 			</div>	
 		</li>
 		</ul><!-- .posts-quick --></div><!-- #index-featured2 -->
@@ -340,8 +433,7 @@ bbr> | <span>No hay comentarios</span>
 			<span class="entry-cat">
 				ANIME			</span>
 			
-			<h3 class="entry-title"><a rel="bookmark" href="http://mackuil.com/2014/03/regalo-para-tu-hijo-ser-parte-de-dragon-ball/" title="Enlace Permanente a Regalo para tu hijo, ser parte de Dragon Ball">Regalo para tu hijo, ser parte de Dragon Ball
-></h3>
+			<h3 class="entry-title"><a rel="bookmark" href="http://mackuil.com/2014/03/regalo-para-tu-hijo-ser-parte-de-dragon-ball/" title="Enlace Permanente a Regalo para tu hijo, ser parte de Dragon Ball">Regalo para tu hijo, ser parte de Dragon Ball</a></h3>
 			<span class="entry-comments">No hay comentarios</span>
 		</li>
 				<li class="post-2319 post type-post status-publish format-standard has-post-thumbnail hentry category-anime category-destacado category-serie tag-anime tag-del-toro tag-guillermo tag-hbo tag-manga tag-monster tag-naoki tag-serie-2 tag-urosawa clearfix">
@@ -349,8 +441,7 @@ bbr> | <span>No hay comentarios</span>
 			<span class="entry-cat">
 				DESTACADO			</span>
 			
-			<h3 class="entry-title"><a rel="bookmark" href="http://mackuil.com/2013/04/guillermo-del-toro-realizara-la-adaptacion-para-tv-de-monster/" title="Enlace Permanente a Guillermo del Toro realizará la adaptacion para TV de Monster">Guillermo del Toro realizará la adaptacion para TV de Monster
-></h3>
+			<h3 class="entry-title"><a rel="bookmark" href="http://mackuil.com/2013/04/guillermo-del-toro-realizara-la-adaptacion-para-tv-de-monster/" title="Enlace Permanente a Guillermo del Toro realizará la adaptacion para TV de Monster">Guillermo del Toro realizará la adaptacion para TV de Monster</a></h3>
 			<span class="entry-comments">No hay comentarios</span>
 		</li>
 				<li class="post-1166 post type-post status-publish format-standard has-post-thumbnail hentry category-anime category-destacado category-series category-videos tag-anime clearfix">
@@ -358,8 +449,7 @@ bbr> | <span>No hay comentarios</span>
 			<span class="entry-cat">
 				DESTACADO			</span>
 			
-			<h3 class="entry-title"><a rel="bookmark" href="http://mackuil.com/2010/07/high-school-of-the-dea-anime/" title="Enlace Permanente a High School of the Dead (anime)">High School of the Dead (anime)
-></h3>
+			<h3 class="entry-title"><a rel="bookmark" href="http://mackuil.com/2010/07/high-school-of-the-dea-anime/" title="Enlace Permanente a High School of the Dead (anime)">High School of the Dead (anime)</a></h3>
 			<span class="entry-comments">1 comentario</span>
 		</li>
 				<li class="post-138 post type-post status-publish format-standard hentry category-anime clearfix">
@@ -367,8 +457,7 @@ bbr> | <span>No hay comentarios</span>
 			<span class="entry-cat">
 				ANIME			</span>
 			
-			<h3 class="entry-title"><a rel="bookmark" href="http://mackuil.com/2008/07/segundo-trailer-paprika/" title="Enlace Permanente a Segundo trailer: Paprika">Segundo trailer: Paprika
-></h3>
+			<h3 class="entry-title"><a rel="bookmark" href="http://mackuil.com/2008/07/segundo-trailer-paprika/" title="Enlace Permanente a Segundo trailer: Paprika">Segundo trailer: Paprika</a></h3>
 			<span class="entry-comments">No hay comentarios</span>
 		</li>
 				<li class="post-110 post type-post status-publish format-standard hentry category-anime clearfix">
@@ -376,13 +465,11 @@ bbr> | <span>No hay comentarios</span>
 			<span class="entry-cat">
 				ANIME			</span>
 			
-			<h3 class="entry-title"><a rel="bookmark" href="http://mackuil.com/2008/05/death-note-2do-op-parodia/" title="Enlace Permanente a Death Note 2do OP parodia">Death Note 2do OP parodia
-></h3>
+			<h3 class="entry-title"><a rel="bookmark" href="http://mackuil.com/2008/05/death-note-2do-op-parodia/" title="Enlace Permanente a Death Note 2do OP parodia">Death Note 2do OP parodia</a></h3>
 			<span class="entry-comments">No hay comentarios</span>
 		</li>
 		</ul><!-- .posts-line -->	<div class="navigation clearfix">
-		<div class="floatleft"><a href="http://mackuil.com/page/2/" >Entradas Previas
-></div>
+		<div class="floatleft"><a href="http://mackuil.com/page/2/" >Entradas Previas</a></div>
 		<div class="floatright"></div>
 	</div>
 
@@ -433,8 +520,7 @@ bbr> | <span>No hay comentarios</span>
 	</form>
     </div>
  <a href="http://mackuil.com/2011/04/estan-entre-nosotros-guia-de-reconocimiento-del-mirrrey/" >
-                     <img src="http://mackuil.com/imagenes/mirrey.jpg" width="300px" />
->
+                     <img src="http://mackuil.com/imagenes/mirrey.jpg" width="300px" /></a>
 
 
 
@@ -444,35 +530,18 @@ bbr> | <span>No hay comentarios</span>
 <!-- Place this tag where you want the badge to render -->
 <g:plus width="300" href="https://plus.google.com/116351171867323860503" rel="publisher" theme="dark"></g:plus>
 
-<div align="center" style="margin-top:-10px;"><a href="https://twitter.com/Darkaw_Remse" class="twitter-follow-button" data-show-count="false" data-lang="es" data-size="big">Siguenos
->
+<div align="center" style="margin-top:-10px;"><a href="https://twitter.com/Darkaw_Remse" class="twitter-follow-button" data-show-count="false" data-lang="es" data-size="big">Siguenos</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
 
 <center>
-<a href="https://www.youtube.com/watch?v=JMqISFKvFMk"><img src="http://mackuil.com/images/drmenguechegif.gif">
->
+<a href="https://www.youtube.com/watch?v=JMqISFKvFMk"><img src="http://mackuil.com/images/drmenguechegif.gif"></a>
 </center>
 </div>
 
                     
    
 	<ul class="xoxo" style="margin-top:420px;">
-		<li id="wdg_specialrecentpostsfree-3" class="widgetcontainer clearfix"><!-- BOF Special Recent Posts FREE Edition ver1.9.6 --><h3 class="widget-title srp-widget-title">Campus Party</h3><div class="srp-widget-container"><div id="wdg_specialrecentpostsfree-3-srp-singlepost-1" class="srp-widget-singlepost"><div class="srp-thumbnail-box"><a class="srp-widget-thmblink" href="http://mackuil.com/2012/10/campus-party-mexico-4ta-edicion-latinoamerica/" title="Campus Party Mexico 4ta edici&oacute;n Latinoamerica"><img class="srp-widget-thmb" src="http://mackuil.com/wp-content/plugins/special-recent-posts/cache/ODA1MG5vY2FtcHVzLXBhcnR5MQ==.jpg" alt="Campus Party Mexico 4ta edici&oacute;n Latinoamerica">
-></div><div class="srp-content-box"><h4 class="srp-post-title"><a class="srp-post-title-link" href="http://mackuil.com/2012/10/campus-party-mexico-4ta-edicion-latinoamerica/" title="Campus Party Mexico 4ta edici&oacute;n Latinoamerica">Campus Party Mexico 4ta edici&oacute;n Latinoamerica
-></h4></div><div style="clear:both; height: 0px;"></div></div><div id="wdg_specialrecentpostsfree-3-srp-singlepost-2" class="srp-widget-singlepost"><div class="srp-thumbnail-box"><a class="srp-widget-thmblink" href="http://mackuil.com/2011/05/entradas-gratis-campus-party-mexico-2011/" title="Entradas gratis Campus Party Mexico 2011"><img class="srp-widget-thmb" src="http://mackuil.com/wp-content/plugins/special-recent-posts/cache/ODA1MG5vY2FtcHVzLXBhcnR5LW1leGljby0yMDEwMTE=.jpg" alt="Entradas gratis Campus Party Mexico 2011">
-></div><div class="srp-content-box"><h4 class="srp-post-title"><a class="srp-post-title-link" href="http://mackuil.com/2011/05/entradas-gratis-campus-party-mexico-2011/" title="Entradas gratis Campus Party Mexico 2011">Entradas gratis Campus Party Mexico 2011
-></h4></div><div style="clear:both; height: 0px;"></div></div><div id="wdg_specialrecentpostsfree-3-srp-singlepost-3" class="srp-widget-singlepost"><div class="srp-thumbnail-box"><a class="srp-widget-thmblink" href="http://mackuil.com/2010/07/que-llevar-a-campus-party-mexico-2010/" title="Que llevar a Campus party Mexico 2010- en adelante"><img class="srp-widget-thmb" src="http://mackuil.com/wp-content/plugins/special-recent-posts/cache/ODA1MG5vZXhwby1iYW5jb21lci0xMDI0eDU3OQ==.png" alt="Que llevar a Campus party Mexico 2010- en adelante">
-></div><div class="srp-content-box"><h4 class="srp-post-title"><a class="srp-post-title-link" href="http://mackuil.com/2010/07/que-llevar-a-campus-party-mexico-2010/" title="Que llevar a Campus party Mexico 2010- en adelante">Que llevar a Campus party Mexico 2010- en adelante
-></h4></div><div style="clear:both; height: 0px;"></div></div><div id="wdg_specialrecentpostsfree-3-srp-singlepost-4" class="srp-widget-singlepost"><div class="srp-thumbnail-box"><a class="srp-widget-thmblink" href="http://mackuil.com/2010/06/computo-forense-campus-party-mx-2009/" title="Computo Forense (Campus Party Mx 2009)"><img class="srp-widget-thmb" src="http://mackuil.com/wp-content/plugins/special-recent-posts/cache/ODA1MG5vMzU3.jpg" alt="Computo Forense (Campus Party Mx 2009)">
-></div><div class="srp-content-box"><h4 class="srp-post-title"><a class="srp-post-title-link" href="http://mackuil.com/2010/06/computo-forense-campus-party-mx-2009/" title="Computo Forense (Campus Party Mx 2009)">Computo Forense (Campus Party Mx 2009)
-></h4></div><div style="clear:both; height: 0px;"></div></div><div id="wdg_specialrecentpostsfree-3-srp-singlepost-5" class="srp-widget-singlepost"><div class="srp-thumbnail-box"><a class="srp-widget-thmblink" href="http://mackuil.com/2010/06/campus-party-mexico-2010/" title="Campus Party M&eacute;xico 2010"><img class="srp-widget-thmb" src="http://mackuil.com/wp-content/plugins/special-recent-posts/cache/ODA1MG5vY2FtcHVzLXBhcnR5LW1leGljbw==.jpg" alt="Campus Party M&eacute;xico 2010">
-></div><div class="srp-content-box"><h4 class="srp-post-title"><a class="srp-post-title-link" href="http://mackuil.com/2010/06/campus-party-mexico-2010/" title="Campus Party M&eacute;xico 2010">Campus Party M&eacute;xico 2010
-></h4></div><div style="clear:both; height: 0px;"></div></div><div style="clear:both; height: 0px;"></div></div><!-- EOF Special Recent Posts FREE Edition ver1.9.6 --></li><li id="wdg_specialrecentpostsfree-2" class="widgetcontainer clearfix"><!-- BOF Special Recent Posts FREE Edition ver1.9.6 --><h3 class="widget-title srp-widget-title">Ultimos contenidos</h3><div class="srp-widget-container"><div id="wdg_specialrecentpostsfree-2-srp-singlepost-1" class="srp-widget-singlepost"><div class="srp-thumbnail-box"><a class="srp-widget-thmblink" href="http://mackuil.com/2014/11/starcraft-2-legacy-of-the-void-trailer-oblivion/" title="Starcraft 2: Legacy of the Void Trailer Oblivion"><img class="srp-widget-thmb" src="http://mackuil.com/wp-content/plugins/special-recent-posts/cache/MjgwMTQwbm9tYXhyZXNkZWZhdWx0LTEwMjR4NTc2.jpg" alt="Starcraft 2: Legacy of the Void Trailer Oblivion">
-></div></div><div id="wdg_specialrecentpostsfree-2-srp-singlepost-2" class="srp-widget-singlepost"><div class="srp-thumbnail-box"><a class="srp-widget-thmblink" href="http://mackuil.com/2014/06/goal-of-the-dead/" title="Goal of the Dead"><img class="srp-widget-thmb" src="http://mackuil.com/wp-content/plugins/special-recent-posts/cache/MjgwMTQwbm8zNjYxMTYtZ29hbC1vZi10aGUtZGVhZC02MjB4MC0y.jpg" alt="Goal of the Dead">
-></div></div><div id="wdg_specialrecentpostsfree-2-srp-singlepost-3" class="srp-widget-singlepost"><div class="srp-thumbnail-box"><a class="srp-widget-thmblink" href="http://mackuil.com/2014/04/sigues-con-tu-dado-de-6-caras-checa-estos/" title="Sigues con tu dado de 6 caras? checa estos:"><img class="srp-widget-thmb" src="http://mackuil.com/wp-content/plugins/special-recent-posts/cache/MjgwMTQwbm9yb2xlcGxheWluZ19kaWNlc19ieV9zdmVuYXJ0LWQzaGp4YmUtMTAyNHg3NjA=.jpg" alt="Sigues con tu dado de 6 caras? checa estos:">
-></div></div><div id="wdg_specialrecentpostsfree-2-srp-singlepost-4" class="srp-widget-singlepost"><div class="srp-thumbnail-box"><a class="srp-widget-thmblink" href="http://mackuil.com/2014/03/dead-space-gratis-en-origin-hasta-8-de-mayo-del-2014/" title="Dead Space gratis en Origin hasta 8 de mayo del 2014"><img class="srp-widget-thmb" src="http://mackuil.com/wp-content/plugins/special-recent-posts/images/icons/default-thumb.gif" alt="No thumbnail available" width="280" height="140">
-></div></div><div id="wdg_specialrecentpostsfree-2-srp-singlepost-5" class="srp-widget-singlepost"><div class="srp-thumbnail-box"><a class="srp-widget-thmblink" href="http://mackuil.com/2014/03/regalo-para-tu-hijo-ser-parte-de-dragon-ball/" title="Regalo para tu hijo, ser parte de Dragon Ball"><img class="srp-widget-thmb" src="http://mackuil.com/wp-content/plugins/special-recent-posts/cache/MjgwMTQwbm8yMDE0LTAzLTA3LTE4LjM4LjIwLTEwMjR4NTc2.png" alt="Regalo para tu hijo, ser parte de Dragon Ball">
-></div></div><div style="clear:both; height: 0px;"></div></div><!-- EOF Special Recent Posts FREE Edition ver1.9.6 --></li><li id="text-3" class="widgetcontainer clearfix">			<div class="textwidget"><img src="http://mackuil.com/imagenes/chuck_approve_mack280.jpg">
+		<li id="wdg_specialrecentpostsfree-3" class="widgetcontainer clearfix"><!-- BOF Special Recent Posts FREE Edition ver1.9.6 --><h3 class="widget-title srp-widget-title">Campus Party</h3><div class="srp-widget-container"><div id="wdg_specialrecentpostsfree-3-srp-singlepost-1" class="srp-widget-singlepost"><div class="srp-thumbnail-box"><a class="srp-widget-thmblink" href="http://mackuil.com/2012/10/campus-party-mexico-4ta-edicion-latinoamerica/" title="Campus Party Mexico 4ta edici&oacute;n Latinoamerica"><img class="srp-widget-thmb" src="http://mackuil.com/wp-content/plugins/special-recent-posts/cache/ODA1MG5vY2FtcHVzLXBhcnR5MQ==.jpg" alt="Campus Party Mexico 4ta edici&oacute;n Latinoamerica"></a></div><div class="srp-content-box"><h4 class="srp-post-title"><a class="srp-post-title-link" href="http://mackuil.com/2012/10/campus-party-mexico-4ta-edicion-latinoamerica/" title="Campus Party Mexico 4ta edici&oacute;n Latinoamerica">Campus Party Mexico 4ta edici&oacute;n Latinoamerica</a></h4></div><div style="clear:both; height: 0px;"></div></div><div id="wdg_specialrecentpostsfree-3-srp-singlepost-2" class="srp-widget-singlepost"><div class="srp-thumbnail-box"><a class="srp-widget-thmblink" href="http://mackuil.com/2011/05/entradas-gratis-campus-party-mexico-2011/" title="Entradas gratis Campus Party Mexico 2011"><img class="srp-widget-thmb" src="http://mackuil.com/wp-content/plugins/special-recent-posts/cache/ODA1MG5vY2FtcHVzLXBhcnR5LW1leGljby0yMDEwMTE=.jpg" alt="Entradas gratis Campus Party Mexico 2011"></a></div><div class="srp-content-box"><h4 class="srp-post-title"><a class="srp-post-title-link" href="http://mackuil.com/2011/05/entradas-gratis-campus-party-mexico-2011/" title="Entradas gratis Campus Party Mexico 2011">Entradas gratis Campus Party Mexico 2011</a></h4></div><div style="clear:both; height: 0px;"></div></div><div id="wdg_specialrecentpostsfree-3-srp-singlepost-3" class="srp-widget-singlepost"><div class="srp-thumbnail-box"><a class="srp-widget-thmblink" href="http://mackuil.com/2010/07/que-llevar-a-campus-party-mexico-2010/" title="Que llevar a Campus party Mexico 2010- en adelante"><img class="srp-widget-thmb" src="http://mackuil.com/wp-content/plugins/special-recent-posts/cache/ODA1MG5vZXhwby1iYW5jb21lci0xMDI0eDU3OQ==.png" alt="Que llevar a Campus party Mexico 2010- en adelante"></a></div><div class="srp-content-box"><h4 class="srp-post-title"><a class="srp-post-title-link" href="http://mackuil.com/2010/07/que-llevar-a-campus-party-mexico-2010/" title="Que llevar a Campus party Mexico 2010- en adelante">Que llevar a Campus party Mexico 2010- en adelante</a></h4></div><div style="clear:both; height: 0px;"></div></div><div id="wdg_specialrecentpostsfree-3-srp-singlepost-4" class="srp-widget-singlepost"><div class="srp-thumbnail-box"><a class="srp-widget-thmblink" href="http://mackuil.com/2010/06/computo-forense-campus-party-mx-2009/" title="Computo Forense (Campus Party Mx 2009)"><img class="srp-widget-thmb" src="http://mackuil.com/wp-content/plugins/special-recent-posts/cache/ODA1MG5vMzU3.jpg" alt="Computo Forense (Campus Party Mx 2009)"></a></div><div class="srp-content-box"><h4 class="srp-post-title"><a class="srp-post-title-link" href="http://mackuil.com/2010/06/computo-forense-campus-party-mx-2009/" title="Computo Forense (Campus Party Mx 2009)">Computo Forense (Campus Party Mx 2009)</a></h4></div><div style="clear:both; height: 0px;"></div></div><div id="wdg_specialrecentpostsfree-3-srp-singlepost-5" class="srp-widget-singlepost"><div class="srp-thumbnail-box"><a class="srp-widget-thmblink" href="http://mackuil.com/2010/06/campus-party-mexico-2010/" title="Campus Party M&eacute;xico 2010"><img class="srp-widget-thmb" src="http://mackuil.com/wp-content/plugins/special-recent-posts/cache/ODA1MG5vY2FtcHVzLXBhcnR5LW1leGljbw==.jpg" alt="Campus Party M&eacute;xico 2010"></a></div><div class="srp-content-box"><h4 class="srp-post-title"><a class="srp-post-title-link" href="http://mackuil.com/2010/06/campus-party-mexico-2010/" title="Campus Party M&eacute;xico 2010">Campus Party M&eacute;xico 2010</a></h4></div><div style="clear:both; height: 0px;"></div></div><div style="clear:both; height: 0px;"></div></div><!-- EOF Special Recent Posts FREE Edition ver1.9.6 --></li><li id="wdg_specialrecentpostsfree-2" class="widgetcontainer clearfix"><!-- BOF Special Recent Posts FREE Edition ver1.9.6 --><h3 class="widget-title srp-widget-title">Ultimos contenidos</h3><div class="srp-widget-container"><div id="wdg_specialrecentpostsfree-2-srp-singlepost-1" class="srp-widget-singlepost"><div class="srp-thumbnail-box"><a class="srp-widget-thmblink" href="http://mackuil.com/2014/11/starcraft-2-legacy-of-the-void-trailer-oblivion/" title="Starcraft 2: Legacy of the Void Trailer Oblivion"><img class="srp-widget-thmb" src="http://mackuil.com/wp-content/plugins/special-recent-posts/cache/MjgwMTQwbm9tYXhyZXNkZWZhdWx0LTEwMjR4NTc2.jpg" alt="Starcraft 2: Legacy of the Void Trailer Oblivion"></a></div></div><div id="wdg_specialrecentpostsfree-2-srp-singlepost-2" class="srp-widget-singlepost"><div class="srp-thumbnail-box"><a class="srp-widget-thmblink" href="http://mackuil.com/2014/06/goal-of-the-dead/" title="Goal of the Dead"><img class="srp-widget-thmb" src="http://mackuil.com/wp-content/plugins/special-recent-posts/cache/MjgwMTQwbm8zNjYxMTYtZ29hbC1vZi10aGUtZGVhZC02MjB4MC0y.jpg" alt="Goal of the Dead"></a></div></div><div id="wdg_specialrecentpostsfree-2-srp-singlepost-3" class="srp-widget-singlepost"><div class="srp-thumbnail-box"><a class="srp-widget-thmblink" href="http://mackuil.com/2014/04/sigues-con-tu-dado-de-6-caras-checa-estos/" title="Sigues con tu dado de 6 caras? checa estos:"><img class="srp-widget-thmb" src="http://mackuil.com/wp-content/plugins/special-recent-posts/cache/MjgwMTQwbm9yb2xlcGxheWluZ19kaWNlc19ieV9zdmVuYXJ0LWQzaGp4YmUtMTAyNHg3NjA=.jpg" alt="Sigues con tu dado de 6 caras? checa estos:"></a></div></div><div id="wdg_specialrecentpostsfree-2-srp-singlepost-4" class="srp-widget-singlepost"><div class="srp-thumbnail-box"><a class="srp-widget-thmblink" href="http://mackuil.com/2014/03/dead-space-gratis-en-origin-hasta-8-de-mayo-del-2014/" title="Dead Space gratis en Origin hasta 8 de mayo del 2014"><img class="srp-widget-thmb" src="http://mackuil.com/wp-content/plugins/special-recent-posts/images/icons/default-thumb.gif" alt="No thumbnail available" width="280" height="140"></a></div></div><div id="wdg_specialrecentpostsfree-2-srp-singlepost-5" class="srp-widget-singlepost"><div class="srp-thumbnail-box"><a class="srp-widget-thmblink" href="http://mackuil.com/2014/03/regalo-para-tu-hijo-ser-parte-de-dragon-ball/" title="Regalo para tu hijo, ser parte de Dragon Ball"><img class="srp-widget-thmb" src="http://mackuil.com/wp-content/plugins/special-recent-posts/cache/MjgwMTQwbm8yMDE0LTAzLTA3LTE4LjM4LjIwLTEwMjR4NTc2.png" alt="Regalo para tu hijo, ser parte de Dragon Ball"></a></div></div><div style="clear:both; height: 0px;"></div></div><!-- EOF Special Recent Posts FREE Edition ver1.9.6 --></li><li id="text-3" class="widgetcontainer clearfix">			<div class="textwidget"><img src="http://mackuil.com/imagenes/chuck_approve_mack280.jpg">
 <script type="text/javascript"><!--
 google_ad_client = "ca-pub-8854862495072268";
 /* 300x250 */

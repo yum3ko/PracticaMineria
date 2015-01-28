@@ -21,4 +21,5 @@ class HistorialRepo extends BaseRepo{
         return Historial::lists('url', 'id');
     }
 
+
 }

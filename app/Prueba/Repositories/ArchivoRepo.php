@@ -39,6 +39,10 @@ class ArchivoRepo {
 
     public function modifica($datos_dominio, $num_maximo)
     {
+        $enlaces = array();
+        $datosEnlaces = array();
+        $coincidencias      = 1;
+
         // Abrir el archivo
         $archivo = '..\Public\_'.$this->archivo_destino;
         $abrir = fopen($archivo,'r+');
@@ -50,17 +54,16 @@ class ArchivoRepo {
          
         // Modificar lineas deseadas 
         $contador = count($contenidos);
-
         for( $i = 0; $i < $contador; $i++ ) 
         {               
             $findA = strpos($contenidos[$i], '<a ');
-
                     
             $contenidos[$i] = substr($contenidos[$i], $findA); //corta del principio hasta el findA
 
             $caracteres_href = 6;
 
             $findHref_inicio = strpos($contenidos[$i], 'href="');
+
             if( count($contenidos[$i]) > ($findHref_inicio+$caracteres_href) )
             {
                 $findHref_final  = strpos($contenidos[$i], '"', $findHref_inicio+$caracteres_href );
@@ -69,6 +72,7 @@ class ArchivoRepo {
             {
                 $findHref_final = 0;
             }
+
 
             if( $findHref_inicio === false )
             {
@@ -84,35 +88,52 @@ class ArchivoRepo {
                 }
             }
 
-            if( $findHref_inicio === false )  //si no contiene atributo href: se deja en blanco
+
+            if( $findHref_inicio === false )  //si no contiene atributo url: se deja en blanco
             {
-                $href = '';
+                $url = '';
                 continue;
             }
 
             $findHref_tamaño = $findHref_final - ($findHref_inicio + $caracteres_href);
-            $href  = substr($contenidos[$i], $findHref_inicio+$caracteres_href, $findHref_tamaño);
+            $url             = substr($contenidos[$i], $findHref_inicio+$caracteres_href, $findHref_tamaño);
 
-            $perteneceDominio = strpos($href, '/');
+            $perteneceDominio = strpos($url, '/');
+
 
             if($perteneceDominio === 0)
             {
-                $href = $datos_dominio['url_dominio'].$href;
+                $url = $datos_dominio['url_dominio'].$url;
             }
-        echo ' url: '.$href.'<br> ';
-                                
 
-            $contador = count($contenidos);
-        
-            // Unir archivo
-            $contenidos = implode("\r\n",$contenidos);
-                 
-            // Guardar Archivo
-            $abrir = fopen($archivo,'w');
-            fwrite($abrir,$contenidos);
-            fclose($abrir);
 
-            echo 'contador: '.$contador;
+            $findPalabra_inicio = strpos($contenidos[$i], ">", $findHref_final);
+            $palabra_clave      = substr($contenidos[$i], $findPalabra_inicio+1);
+
+            $compruebaIMG       = strpos($contenidos[$i], "img", $findHref_final); 
+            $caracteres_alt = 5;
+
+            if($compruebaIMG !== false){
+
+                $compruebaIMG  = strpos($contenidos[$i], 'alt="');
+                $findAlt_final = strpos($contenidos[$i], '"', $compruebaIMG+$caracteres_alt );
+
+                if( $compruebaIMG !== false )
+                {
+                    $compruebaIMG  = strpos($contenidos[$i], "alt='");
+                    $findAlt_final = strpos($contenidos[$i], "'", $compruebaIMG+$caracteres_alt );
+                }
+
+                if( $compruebaIMG === false )  //si no contiene atributo alt: se elimina
+                {
+                    $palabra_clave = '';
+                    continue;
+                }
+
+                $findAlt_total = $findAlt_final - ($compruebaIMG + $caracteres_alt);
+                $palabra_clave = substr($contenidos[$i], $compruebaIMG+$caracteres_alt, $findAlt_total);
+            }
+            
 
             if( $contador == intval($num_maximo) )
             {
@@ -124,12 +145,47 @@ class ArchivoRepo {
                 break;
             }
 
+            //GUARDANDO DATOS en arreglo
+            $datosEnlaces = compact('url', 'palabra_clave', 'coincidencias');
 
-            dd('numero maximo '.$num_maximo);
-            dd($contenidos);
+            
+                
+            if( $i==0 )
+            {
+                array_unshift($enlaces, $datosEnlaces);
+            }
+            else
+            {
+                foreach($enlaces as $enlace) 
+                {
+                    if( in_array($enlace, $datosEnlaces) )
+                    {
+                        $enlace['coincidencias'] =+ 1;                      
+                    }
+                    else
+                    {
+                        $enlaces[] = $datosEnlaces;
+                    }
+                }
+            }
 
+            
+                //dd(array_values($enlaces));
     
         }//for contador
+    
+        // Unir archivo
+        $contenidos = implode("\r\n",$contenidos);
+                 
+        // Guardar Archivo
+        $abrir = fopen($archivo,'w');
+        fwrite($abrir,$contenidos);
+        fclose($abrir);
+
+        //Borrar archivo
+        unlink($archivo);
+
+        return $enlaces;
     }
 
 }

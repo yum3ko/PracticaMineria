@@ -34,4 +34,5 @@ abstract class BaseRepo {
         return $this->model->simplePaginate($take);
     }
 
+
 }
