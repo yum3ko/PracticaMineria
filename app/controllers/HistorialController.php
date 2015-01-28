@@ -26,13 +26,22 @@ class HistorialController extends BaseController {
 
 	public function index()
 	{
+		$numero = array('50'=>'50', '100'=>'100', '150'=>'150');
+
+		return View::make('mineria', compact('numero'));
+
+	}
+
+	public function iniciado($url_iniciada)
+	{
+
 		$historial_id = $this->historialRepo->all()->count();
 
 		$datos = $this->detallesRepo->getDetallesByHistorial($historial_id);
 
 		$numero = array('50'=>'50', '100'=>'100', '150'=>'150');
 
-		return View::make('mineria', compact('datos', 'numero'));
+		return View::make('mineria-iniciado', compact('datos', 'numero', 'url_iniciada'));
 
 	}
 	public function store()
@@ -80,8 +89,10 @@ class HistorialController extends BaseController {
 			
 		}
 
+		$url_iniciada = $data['url'];
 
-		return Redirect::route('mineria');
+		return Redirect::route('mineria-iniciado', ['url_iniciada'=>$url_iniciada]);
+		
 	}
 
 

@@ -14,4 +14,6 @@
 
 Route::get('/', ['as' => 'mineria', 'uses' => 'HistorialController@index']);
 
+Route::get('/{url_iniciada}', ['as' => 'mineria-iniciado', 'uses' => 'HistorialController@iniciado']);
+
 Route::post('historial/add', ['as' => 'add_historial', 'uses' => 'HistorialController@store']);

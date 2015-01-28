@@ -6,8 +6,7 @@ class HistorialManager extends BaseManager{
     public function getRules()
     {
         $rules = [
-            'url'           => 'required',
-            'numero_maximo' => 'required'
+            'url'           => 'required'
         ];
 
         return $rules;

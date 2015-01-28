@@ -18,7 +18,7 @@
             {{ Form::open(['route' => 'add_historial', 'method' => 'POST', 'role' => 'form']) }}
 
                 <div class="form-group col-sm-4">
-                    {{ Field::text('url') }}
+                    {{ Field::text('url', $url_iniciada) }}
 
                 </div>
 
@@ -48,14 +48,14 @@
                         </tr>
                     </thead>
                     <tbody>
-                        
-                        <tr>
-                            <td class="col-xs-6"> </td>
-                            <td class="col-xs-3"> </td>
-                            <td class="col-xs-3"> </td>
-                            
-                        </tr>
-                        
+                        @foreach ($datos as $dato)
+                            <tr>
+                                <td class="col-xs-6">{{ $dato->url }} </td>
+                                <td class="col-xs-3">{{ $dato->palabra_clave }} </td>
+                                <td class="col-xs-3">{{ $dato->coincidencias }} </td>
+                                
+                            </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div><!-- table-responsive -->
