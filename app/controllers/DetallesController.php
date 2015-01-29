@@ -110,10 +110,10 @@ class DetallesController extends BaseController {
 			}
 		}
 		
-		
+
 		$url_iniciada = $data['url'];
 
-		return Redirect::route('mineria-iniciado', ['url_iniciada'=>$url_iniciada]);
+		return Redirect::route('mineria-iniciado', compact('url_iniciada'));
 		
 	}
 

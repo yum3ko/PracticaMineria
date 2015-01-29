@@ -1,30 +1,24 @@
 <?php
-use Prueba\Entities\Detalles;
+use Prueba\Entities\Historial;
 use Prueba\Repositories\HistorialRepo;
-use Prueba\Repositories\ArchivoRepo;
-use Prueba\Managers\DetallesManager;
+
 
 class HistorialController extends BaseController {
 
-  protected $historialRepo;
-  protected $archivoRepo;
+  	protected $historialRepo;
 
 
-  public function __construct(HistorialRepo $historialRepo, ArchivoRepo $archivoRepo)
-  {
-    $this->historialRepo = $historialRepo;
-    $this->archivoRepo 	= $archivoRepo;
-  }
+    public function __construct(HistorialRepo $historialRepo)
+    {
+    	$this->historialRepo = $historialRepo;
+	}
 
 	public function index()
 	{
 		$datos = $this->historialRepo->all();
 
-		$numero = array('50'=>'50', '100'=>'100', '150'=>'150');
-
-		return View::make('mineria', compact('datos', 'numero'));
-
+		return View::make('historial', compact('datos'));
 	}
-
+	
 
 }

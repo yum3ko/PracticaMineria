@@ -6,7 +6,7 @@
 @stop
 
 @section('header')
-    <h1 class="text-center">Minería</h1>
+    <h1 class="text-center">Minería de Datos</h1>
 
 @stop
 
@@ -37,6 +37,10 @@
                 </div>
             
             {{ Form::close() }}
+        </div><!-- container-->
+        
+        <div class="container">
+            <a href="{{ route('historial') }}" class="btn btn-default">Ver historial general</a>
         </div><!-- container-->
 
         <div class="container">

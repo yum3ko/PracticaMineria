@@ -35,9 +35,6 @@
     @yield('footer')
 
 
-  <script type="text/php">
-    
-  </script>
 
 </section>
 
