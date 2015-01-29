@@ -125,7 +125,7 @@ return array(
 
 		//Custom
         "Prueba\Components\FieldServiceProvider",
-        'Bllim\Datatables\DatatablesServiceProvider',
+        'Bllim\Datatables\DatatablesServiceProvider'
 
 	),
 

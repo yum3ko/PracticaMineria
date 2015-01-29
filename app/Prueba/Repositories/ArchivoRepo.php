@@ -2,6 +2,7 @@
 namespace Prueba\Repositories;
 
 use Prueba\Entities\Historial;
+use Symfony\Component\DomCrawler\Crawler;
 
 class ArchivoRepo {
 
@@ -55,104 +56,26 @@ class ArchivoRepo {
     }
 
 
-    public function getDatos($contenidoArchivo, $datos_dominio, $num_maximo)
+    public function getDatos($documento)
     {
-        $enlaces        = array();
-        $datosEnlaces   = array();
+        $crawler = new Crawler($documento);
 
-        // Separar linea por linea
-        $contenidos = explode('</a',$contenidoArchivo);
-         
-        // Modificar lineas deseadas 
-        $contador = count($contenidos);
+        $array = $crawler->filter('a')->each(function ($node, $i) {
+            $palabra[] = $node->text();
+            $href[]  = $node->attr('href');
 
-        if($num_maximo > $contador)
-        {
-            $num_maximo = $contador;
-        }
+            return compact('palabra', 'href');
+        });
 
-        for( $i = 0; $i < $num_maximo; $i++ ) 
-        {
-           
-            $findA = strpos($contenidos[$i], '<a ');
-            if($findA === false){
-                continue;
-            }
-            $contenidos[$i] = substr($contenidos[$i], $findA); //corta del principio hasta el findA
-
-            $caracteres_href = 6;
-            $findHref_inicio = strpos($contenidos[$i], 'href="');
-
-            if( count($contenidos[$i]) > ($findHref_inicio+$caracteres_href) )
-            {
-                $findHref_final  = strpos($contenidos[$i], '"', $findHref_inicio+$caracteres_href );
-            }
-            else
-            {
-                $findHref_final = 0;
-            }
-
-            if( $findHref_inicio === false )
-            {
-                $findHref_inicio = strpos($contenidos[$i], "href='");
-                
-                if( count($contenidos[$i]) > ($findHref_inicio+$caracteres_href) )
-                {
-                    $findHref_final  = strpos($contenidos[$i], "'", $findHref_inicio+$caracteres_href );
-                }
-                else
-                {
-                    $findHref_final = 0;
-                }
-            }
+        return $array;
+    }
 
 
-            if( $findHref_inicio === false )  //si no contiene atributo url: se deja en blanco
-            {
-                $url = '';
-                continue;
-            }
+    public function depurarDatos($datosEnlaces)
+    {
 
-            $findHref_tamanno = $findHref_final - ($findHref_inicio + $caracteres_href);
-            $url              = substr($contenidos[$i], $findHref_inicio+$caracteres_href, $findHref_tamanno);
-
-
-            $perteneceDominio = strpos($url, '/');
-            if($perteneceDominio === 0)
-            {
-                $url = $datos_dominio['url_dominio'].$url;
-            }
-
-            $caracter_palabra = 1;
-            $findPalabra_inicio = strpos($contenidos[$i], ">", $findHref_final);
-            $palabra_clave      = substr($contenidos[$i], $findPalabra_inicio+$caracter_palabra);
-
-            $compruebaIMG       = strpos($contenidos[$i], "img", $findHref_final); 
-            $caracteres_alt = 5;
-
-            if($compruebaIMG !== false){
-
-                $compruebaIMG  = strpos($contenidos[$i], 'alt="');
-                $findAlt_final = strpos($contenidos[$i], '"', $compruebaIMG+$caracteres_alt );
-
-                if( $compruebaIMG !== false )
-                {
-                    $compruebaIMG  = strpos($contenidos[$i], "alt='");
-                    $findAlt_final = strpos($contenidos[$i], "'", $compruebaIMG+$caracteres_alt );
-                }
-
-                if( $compruebaIMG === false )  //si no contiene atributo alt: se elimina
-                {
-                    $palabra_clave = '';
-                    continue;
-                }
-                $findAlt_total = $findAlt_final - ($compruebaIMG + $caracteres_alt);
-
-                $palabra_clave = substr($contenidos[$i], $compruebaIMG+$caracteres_alt, $findAlt_total);
-            }
-            $coincidencias = $this->coincidencia;
-
-            //GUARDANDO DATOS en arreglo
+dd($datosEnlaces);
+            
             $datosEnlaces = compact('url', 'palabra_clave', 'coincidencias');
 
             if(isset($datosEnlaces))
@@ -177,9 +100,9 @@ class ArchivoRepo {
                 }
             }
     
-        }//for contador
+      
 
-        return $enlaces;
+        return true;
     }
 
 
