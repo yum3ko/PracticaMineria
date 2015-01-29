@@ -65,7 +65,7 @@ class HistorialController extends BaseController {
 		{
 			$contenido = $this->archivoRepo->getArchivo();
 
-			if( $contenido !== false)
+			if( $contenido != '' )
 			{
 				$enlaces = $this->archivoRepo->getDatos($contenido, $datos_dominio, $data['numero_maximo']);
 

@@ -22,7 +22,7 @@
                         <label for="url" class="col-ms-4 control-label">Escribe una URL</label>
                     </div>
                     <div class="form-group col-sm-8">
-                        <input type="text" name="url" id="url" class="form-control col-ms-8">
+                        <input type="text" name="url" id="url" class="form-control col-ms-8" value=<?= $url_iniciada ?> >
                     </div>
                 </div>
 

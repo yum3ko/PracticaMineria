@@ -6,6 +6,7 @@ use Prueba\Entities\Historial;
 class ArchivoRepo {
 
 	protected $archivo_destino = 'temp.txt';
+    protected $coincidencia  = 1;
 
 
 	public function setDatos($url)
@@ -39,13 +40,10 @@ class ArchivoRepo {
 
     public function getArchivo()
     {
-        $enlaces        = array();
-        $datosEnlaces   = array();
-        $coincidencias  = 1;
-
         // Abrir el archivo
         $archivo = '..\Public\_'.$this->archivo_destino;
-        if( !($abrir = fopen($archivo,'r+')) )
+        $exito   = $abrir = fopen($archivo,'r+');
+        if( !$exito )
         {
             return false;
         }
@@ -57,23 +55,26 @@ class ArchivoRepo {
     }
 
 
-    public function getDatos($contenidos, $datos_dominio, $num_maximo)
+    public function getDatos($contenidoArchivo, $datos_dominio, $num_maximo)
     {
+        $enlaces        = array();
+        $datosEnlaces   = array();
+
         // Separar linea por linea
-        $contenidos = explode("</a",$contenidos);
+        $contenidos = explode('</a',$contenidoArchivo);
          
         // Modificar lineas deseadas 
         $contador = count($contenidos);
 
-        if($num_maximo < $contador)
+        if($num_maximo > $contador)
         {
             $num_maximo = $contador;
         }
 
         for( $i = 0; $i < $num_maximo; $i++ ) 
         {
-
-            $findA = strpos($contenidos[$i], '<a ', 0);
+           
+            $findA = strpos($contenidos[$i], '<a ');
             if($findA === false){
                 continue;
             }
@@ -149,7 +150,7 @@ class ArchivoRepo {
 
                 $palabra_clave = substr($contenidos[$i], $compruebaIMG+$caracteres_alt, $findAlt_total);
             }
-
+            $coincidencias = $this->coincidencia;
 
             //GUARDANDO DATOS en arreglo
             $datosEnlaces = compact('url', 'palabra_clave', 'coincidencias');
@@ -177,7 +178,7 @@ class ArchivoRepo {
             }
     
         }//for contador
-                 
+
         return $enlaces;
     }
 
