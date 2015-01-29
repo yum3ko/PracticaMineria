@@ -47,7 +47,8 @@ class ArchivoRepo {
         {
             $gestor = fopen($archivo,'w+');
 
-            if(filesize($archivo) > 0){
+            if(filesize($archivo) > 0)
+            {
                 $contenidos = fread($gestor, filesize($archivo));
 
                 fclose($gestor);

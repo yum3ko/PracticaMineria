@@ -14,7 +14,7 @@
 
 Route::get('/', ['as' => 'mineria', 'uses' => 'DetallesController@index']);
 
-Route::get('detalles/{url_iniciada}', ['as' => 'mineria-iniciado', 'uses' => 'DetallesController@iniciado']);
+Route::get('detalles/{exito}/{url_iniciada}', ['as' => 'mineria-iniciado', 'uses' => 'DetallesController@iniciado']);
 
 Route::post('detalles/add', ['as' => 'add_detalles', 'uses' => 'DetallesController@store']);
 

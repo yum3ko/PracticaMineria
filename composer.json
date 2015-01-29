@@ -7,7 +7,7 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		"bllim/datatables": "*",
-		"symfony/dom-crawler": "2.6.3"
+		"symfony/dom-crawler": "2.*"
 	},
 	"require-dev": {
         "way/generators": "2.*",

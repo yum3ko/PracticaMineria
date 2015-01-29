@@ -32,22 +32,31 @@ class DetallesController extends BaseController {
 
 	}
 
-	public function iniciado($url_iniciada)
+	public function iniciado($exito, $url_iniciada)
 	{
 
-		$historial_id = $this->historialRepo->all()->count();
+		if( $exito )
+		{
+			$historial_id = $this->historialRepo->all()->count();
 
-		$datos = $this->detallesRepo->getDetallesByHistorial($historial_id);
+			$datos = $this->detallesRepo->getDetallesByHistorial($historial_id);
 
-		$numero = array('50'=>'50', '100'=>'100', '150'=>'150');
+			$numero = array('50'=>'50', '100'=>'100', '150'=>'150');
 
-		return View::make('mineria-iniciado', compact('datos', 'numero', 'url_iniciada'));
+			return View::make('mineria-iniciado', compact('datos', 'numero', 'url_iniciada'));
+		}
+		else
+		{
+			return Redirect::route('mineria');
+		}
 
 	}
 
 
 	public function store()
 	{
+		$exito = false;
+
 		$historial = $this->historialRepo->newHistorial();
 
 		$data = Input::all();
@@ -108,12 +117,13 @@ class DetallesController extends BaseController {
 					}
 				}
 			}
+			$exito = true;
 		}
 		
 
 		$url_iniciada = $data['url'];
 
-		return Redirect::route('mineria-iniciado', compact('url_iniciada'));
+		return Redirect::route('mineria-iniciado', compact('exito', 'url_iniciada'));
 		
 	}
 
