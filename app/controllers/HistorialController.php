@@ -52,8 +52,10 @@ class HistorialController extends BaseController {
 	public function store()
 	{
 		$historial = $this->historialRepo->newHistorial();
+
 		$data = Input::all();
 
+		$numero_maximo= $data['numero_maximo'];
 		$datos_dominio = $this->archivoRepo->setDatos($data['url']);
 
 
@@ -78,32 +80,35 @@ class HistorialController extends BaseController {
 
 			if( $contEnlaces > 0)
 			{
-				$enlaces = $this->archivoRepo->depurarDatos($datoEnlaces);
+				$enlaces = $this->archivoRepo->depurarDatos($datoEnlaces, $numero_maximo);
 
 
+				foreach($enlaces as $datosEnlace)
+				{
+					$enlace = extract($datosEnlace);
+			
+					$url 		   = $this->archivoRepo->formatStrDato($url);
+					$palabra_clave = $this->archivoRepo->formatStrDato($palabra_clave);
+					$coincidencias = $this->archivoRepo->formatIntDato($coincidencias);
+					
 
-
+					$dataDetalle = array(
+						'url' 			=> $url,
+						'palabra_clave' => $palabra_clave,
+						'coincidencias' => $coincidencias,
+						'historial_id'	=> $historial_id
+					);
 
 					$detalles = $this->detallesRepo->newDetalles();
 
-					foreach($enlaces as $enlac){
-						$enlace = extract($enlac);
-						
-						$dataDetalle = array(
-							'url' 			=> $url,
-							'palabra_clave' => $palabra_clave,
-							'coincidencias' => $coincidencias,
-							'historial_id'	=> $historial_id
-						);
+					$detallesManager = new DetallesManager($detalles, $dataDetalle);
 
-						$detallesManager = new DetallesManager($detalles, $dataDetalle);
+					$detallesManager->save();
 
-						$detallesManager->save();
-
-						$detallesStatus = 'Success';
-					}
+					$detallesStatus = 'Success';
 				}
 			}
+		}
 		
 		$this->archivoRepo->deleteArchivo();
 

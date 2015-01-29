@@ -58,51 +58,69 @@ class ArchivoRepo {
 
     public function getDatos($documento)
     {
+
         $crawler = new Crawler($documento);
 
         $array = $crawler->filter('a')->each(function ($node, $i) {
-            $palabra[] = $node->text();
-            $href[]  = $node->attr('href');
+            $palabra_clave[] = $node->text();
+            $url[]           = $node->attr('href');
+            $coincidencias[] = $this->coincidencia;
 
-            return compact('palabra', 'href');
+            return compact('palabra_clave', 'url', 'coincidencias');
         });
 
         return $array;
     }
 
 
-    public function depurarDatos($datosEnlaces)
+    public function depurarDatos($datosEnlaces, $numero_maximo)
     {
+        $contador = count($datosEnlaces);
 
-dd($datosEnlaces);
-            
-            $datosEnlaces = compact('url', 'palabra_clave', 'coincidencias');
+
 
             if(isset($datosEnlaces))
             {
-                if( $i==0 )
-                {
-                    $enlaces[0] = $datosEnlaces;
-                }
-                else
-                {
-                    foreach($enlaces as $enlace) 
+                $i;
+                $enlaces[0] = $datosEnlaces[0];
+
+                for($i=0; $i < $numero_maximo-1; $i++) {
+
+                    if( in_array($enlaces, $datosEnlaces[$i]) )
                     {
-                        if( in_array($enlace, $datosEnlaces) )
-                        {
-                            $enlace['coincidencias'] =+ 1;                      
-                        }
-                        else
-                        {
-                            $enlaces[] = $datosEnlaces;
-                        }
+                        $enlace['coincidencias'] =+ 1;                      
                     }
+                    else
+                    {
+                        $enlaces[] = $datosEnlaces;
+                    }
+                
                 }
             }
-    
-      
 
-        return true;
+        return $enlaces;
+    }
+
+
+    public function formatStrDato($dato)
+    {
+        if(is_array($dato))
+        {
+            $dato = implode($dato);
+        }
+
+        return $dato;
+    }
+
+    public function formatIntDato($dato)
+    {
+        if(is_array($dato))
+        {
+            $dato = implode($dato);
+        }
+            $dato = intval($dato);
+
+        return $dato;
     }
 
 
@@ -110,9 +128,13 @@ dd($datosEnlaces);
     {
         $archivo = '..\Public\_'.$this->archivo_destino;
         //Borrar archivo
-        unlink($archivo);
-
-        return true;
+        if(unlink($archivo))
+        {
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
 }

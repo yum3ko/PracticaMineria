@@ -18,11 +18,12 @@ abstract class BaseManager{
     public function isValid()
     {
         $rules = $this->getRules();
+        
         $validation = \Validator::make($this->data, $rules);
 
-        if ($validation->fails()) {
-            throw new ValidationException("Validation failed", $validation->messages());
-
+        if ($validation->fails())
+        {
+            throw new ValidationException('Validation failed', $validation->messages());
         }
     }
 
