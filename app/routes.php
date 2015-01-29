@@ -12,10 +12,8 @@
 */
 
 
-Route::get('/', ['as' => 'mineria', 'uses' => 'HistorialController@index']);
+Route::get('/', ['as' => 'mineria', 'uses' => 'DetallesController@index']);
 
-Route::get('/{url_iniciada}', ['as' => 'mineria-iniciado', 'uses' => 'HistorialController@iniciado']);
+Route::get('/{url_iniciada}', ['as' => 'mineria-iniciado', 'uses' => 'DetallesController@iniciado']);
 
-Route::post('historial/add', ['as' => 'add_historial', 'uses' => 'HistorialController@store']);
-
-Route::get('/prueba/crawler', ['as' => 'crawler', 'uses' => 'HistorialController@crawler']);
+Route::post('detalles/add', ['as' => 'add_detalles', 'uses' => 'DetallesController@store']);

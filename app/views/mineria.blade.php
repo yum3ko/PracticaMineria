@@ -15,7 +15,7 @@
     
     <div class="panel-body">
         <div class="container">
-            {{ Form::open(['route' => 'add_historial', 'method' => 'POST', 'role' => 'form']) }}
+            {{ Form::open(['route' => 'add_detalles', 'method' => 'POST', 'role' => 'form']) }}
 
                 <div class="form-group col-sm-4">
                     <div class="form-group col-sm-4">

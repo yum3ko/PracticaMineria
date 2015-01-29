@@ -6,7 +6,7 @@ use Symfony\Component\DomCrawler\Crawler;
 
 class ArchivoRepo {
 
-	protected $archivo_destino = 'temp.txt';
+	protected $nombre_archivo = 'temp.txt';
     protected $coincidencia  = 1;
 
 
@@ -22,37 +22,45 @@ class ArchivoRepo {
 	public function makeArchivo($datos_dominio)
     {
         $curl = curl_init ($datos_dominio['url_dominio']);         //inicia sesion
-        $fs_archivo = fopen ('..\Public\_'.$this->archivo_destino, "w"); 
+        $fs_archivo = fopen ('..\Public\_'.$this->nombre_archivo, "w"); 
         curl_setopt ($curl, CURLOPT_FILE, $fs_archivo); //establece opciones para transferencia
         curl_setopt ($curl, CURLOPT_HEADER, 0); 
         curl_exec ($curl);								//ejecuta sesion
 
         if(curl_errno ($curl)===false)
         {
-            $exito = false;
+            return false;
         } 
         curl_close ($curl);  							//termina sesion
-        fclose ($fs_archivo); 
-        $exito = true;
+        fclose ($fs_archivo);
 
-        return $exito;
+        return true;
     }
 
 
     public function getArchivo()
     {
         // Abrir el archivo
-        $archivo = '..\Public\_'.$this->archivo_destino;
-        $exito   = $abrir = fopen($archivo,'r+');
-        if( !$exito )
+        $archivo = '..\Public\_'.$this->nombre_archivo;
+
+        if(file_exists($archivo))
         {
-            return false;
+            $gestor = fopen($archivo,'w+');
+
+            if(filesize($archivo) > 0){
+                $contenidos = fread($gestor, filesize($archivo));
+
+                fclose($gestor);
+
+                if( $contenidos != false )
+                {
+                    return $contenidos;
+                }
+
+            }
         }
 
-        $contenidos = fread($abrir,filesize($archivo));
-        fclose($abrir);
-
-        return $contenidos;
+        return false;
     }
 
 
@@ -77,24 +85,24 @@ class ArchivoRepo {
     {
         $contador = count($datosEnlaces);
 
-
-
             if(isset($datosEnlaces))
             {
-                $i;
                 $enlaces[0] = $datosEnlaces[0];
 
-                for($i=0; $i < $numero_maximo-1; $i++) {
-
-                    if( in_array($enlaces, $datosEnlaces[$i]) )
+                if(count($datosEnlaces) > 1)
+                {
+                    for($i=0; $i < $numero_maximo-1; $i++) 
                     {
-                        $enlace['coincidencias'] =+ 1;                      
+                        if( in_array($enlaces, $datosEnlaces[$i]) )
+                        {
+                            $enlace['coincidencias'] =+ 1;                      
+                        }
+                        else
+                        {
+                            $enlaces[] = $datosEnlaces;
+                        }
+                    
                     }
-                    else
-                    {
-                        $enlaces[] = $datosEnlaces;
-                    }
-                
                 }
             }
 
@@ -123,18 +131,5 @@ class ArchivoRepo {
         return $dato;
     }
 
-
-    public function deleteArchivo()
-    {
-        $archivo = '..\Public\_'.$this->archivo_destino;
-        //Borrar archivo
-        if(unlink($archivo))
-        {
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
 
 }

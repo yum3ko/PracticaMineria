@@ -23,7 +23,7 @@ abstract class BaseManager{
 
         if ($validation->fails())
         {
-            throw new ValidationException('Validation failed', $validation->messages());
+        //    throw new ValidationException('Validation failed', $validation->messages());
         }
     }
 
