@@ -10,6 +10,10 @@
 
 @stop
 
+@section('css')
+    <link href="fassets/css/jquery.datatables.css" rel="stylesheet">
+    <link href="fassets/css/bootstrap.min.css" rel="stylesheet"> 
+@stop
 
 @section('contenido')
     
@@ -32,7 +36,6 @@
                 </div>
     
                 <div class="form-group col-sm-4">
-                  
                     <button type="submit" class="btn btn-default btn-block" id="enviar">Comenzar Minería</button>
                 </div>
             
@@ -72,13 +75,6 @@
     </div> <!-- panel body-->
 @stop
 
-@section('footer')
-
-    <div class="container text-center">
-        <p>Prueba de Dania Monserrat Brito Arroyo</p>
-    </div>
-
-@stop
 
 @section('scripts')
 <script>
